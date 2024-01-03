@@ -1,32 +1,33 @@
 # Java code execute in Computer
+![java code excution](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/1089350f-93cf-46f3-8dcc-24751076d516)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/628afa62-48ce-4009-8b02-14709831a768/Untitled.png)
 
 dot java file are converted into dot.class file(byte code)  then converted machines Code
 
 # More about platform independence
 
 - It means that the byte code can run on all operating System
-- We need to convert source code to machines code so computer can understand
-- complier helps in doing this by turning it into executable code
+- We need to convert source code to machine code so the computer can understand
+- compiler helps in doing this by turning it into executable code
 - this  executable code is a set of instructions for the computer
-- After compling C/C++ code excute we get .exe  file which is platform depedent
-- In java we byte code, JVM converts into machince code
-- Java is platform independent but JVM is paltform dependent
+- After compiling C/C++ code execute we get .exe  file which is platform-dependent
+- In Java we byte code, JVM converts into machine code
+- Java is platform-independent but JVM is platform-dependent
 
-# Java architecture Digram
+# Java Architecture Diagram
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/249e22c1-a03a-4f53-b049-eb2bccdd9371/Untitled.png)
 
-# JDK  → Java development  Kit
+![Java Architecture digram](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/46b78491-f340-4437-9392-e09c108abd21)
 
-provides environment to develop and run the Java program 
+# JDK  → Java Development  Kit
+
+provides an environment to develop and run the Java program 
 
 It is a package that packages 
 
 - Development tool s → to provide an environment to develop your program
 - JRE →  To execute your program,
-- a complier - javac
+- a compiler - javac
 - archiver -jar
 - docs geneartor →javadoc
 - interpreter /Loader
@@ -35,9 +36,9 @@ It is a package that packages
 
  
 
-- it is  an installation package that provides  Environment to only run the program
+- it is  an installation package that provides  the Environment to only run the program
 - it consists of
-1. Development technologies
+1. Development Technologies
 2. user interface toolkit 
 3. integration Libraries 
 4. base libraries 
@@ -46,12 +47,14 @@ It is a package that packages
 After we get .class file the next things happen at runtime 
 
 1. class loader loads all classes needed to execute the program 
-2. JVM sends code to byte coder verifier to check the format of code 
+2. JVM sends code to byte coder verifier to check the format of the code 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/6f26f8fa-769a-44d9-82cf-93d11b4bfe93/Untitled.png)
+![Java Architecture  jvm and jre](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/44e64bd4-3f4f-4e74-8390-c5803eba4853)
+
 
 Java program compling 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/e6c94e1b-cdc2-4e82-8f40-4030f308fecb/Untitled.png)
+![java compling code](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/369dbff6-6554-470c-9725-e0335fb60af6)
+
 
 Jvm is box of container its support jre
