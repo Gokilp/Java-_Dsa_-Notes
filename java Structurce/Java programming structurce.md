@@ -28,64 +28,21 @@ By using java and name of file we can run the program.
 - Command > **java Main**
 
 # Hello world program
-# Hello world program
+
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/d1c901b3-ce3f-4766-be83-001e4162c91c/Untitled.png)
 
-<aside>
-💡 **public (in first line):-** public is an access modifier which allows to access the class from anywhere.
-
-</aside>
-
-<aside>
-💡 **class :-** It is a name group of properties and functions
-
-</aside>
-
-<aside>
-💡 **Main :-** It is just the name of class as same as the name of
-
-</aside>
-
-<aside>
-💡 **public (in second line) :-** It is used to allow the program to use main function from
-
-</aside>
-
-<aside>
-💡 **static :-** It is a keyword which helps the main method to run without using objects.
-
-</aside>
-
-<aside>
-💡 **void :-** It is a keyword used when we do not want to return anything from a method/function
-
-</aside>
-
-<aside>
-💡 **main :-**It is the name of
-
-</aside>
-
-<aside>
-💡 **String [] args :-** It is a command line argument of string type
-
-</aside>
-
-<aside>
-💡 **System:-** It is a final class defined in lang package.
-
-</aside>
-
-<aside>
-💡 **out :-** It is a variable of PrintStream type which is public and static member field of the System class.
-
-</aside>
-
-<aside>
-💡 **println :-** It is a method of PrintStream class, It prints the argumants passed to it and adds a new **print** can aalso be used here but it prints only arguments passed to it. It do not adds a new line.
-
-</aside>
+- **public (in first line):-** public is an access modifier which allows to access the class from anywhere.
+- **class :-** It is a name group of properties and functions
+- **Main :-** It is just the name of class as same as the name of
+- **public (in second line) :-** It is used to allow the program to use main function from
+- **static :-** It is a keyword which helps the main method to run without using objects.
+- **void :-** It is a keyword used when we do not want to return anything from a method/function
+- **main :-**It is the name of
+- **String [] args :-** It is a command line argument of string type
+- **System:-** It is a final class defined in lang package.
+- **out :-** It is a variable of PrintStream type which is public and static member field of the System class.
+- **println :-** It is a method of PrintStream class, It prints the argumants passed to it and adds a new **print** can aalso be used here but it prints only arguments passed to it. It do not adds a new line.
 
 ## What is package ?
 
@@ -185,6 +142,11 @@ Syntax:
 
 Input :- Hey kunal
 
+Output :- Hey
+
+1. Using nextLine() Method :- It will take all string input including 
+
+Syntax:-
 Output :- Hey
 
 1. Using nextLine() Method :- It will take all string input including 
