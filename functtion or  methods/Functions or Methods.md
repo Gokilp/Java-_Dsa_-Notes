@@ -42,17 +42,16 @@ method() // calling  function
 - The variable  receiving the value returned by a method must also a compatible with the return type specified for the method.
 
 # Pass by Value
+![pass value](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/00293362-eae4-4660-999b-92e3f3b933d3)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/16be72b3-195d-4a89-9895-cfc2b4de0caf/Untitled.png)
 
 # Points to be  noted
 
 - Primitive Data type like int, short, char, byte etc  →  just pass value.
 - object & reference → passing value of reference Variable
 
- 
+ ![points](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/0a9d4e83-5f7f-443f-9cec-b4d149719634)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/c3f66927-126d-4742-a141-906b418577bd/Untitled.png)
 
 # Scopes:
 
@@ -66,22 +65,25 @@ Scopes are available 3 types
 
 Function Scope variable declared inside a method/ function scope (means inside method) can’t be accessed variable outside the method 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/75cd9a9e-19dc-497f-a104-8a4e2581bcfc/Untitled.png)
+![functionscope](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/bac88529-761a-42b2-ad09-3a79d0557801)
+
 
 ## Shadowing
 
 Shadowing in Java is the practice of using variable is overlapping scopes with the same name where the variable in low-level scopes overrides the variable of high level scope. Here the variable at high - level scope is shadowing by low level scope variable 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/304a3d83-1272-47b8-b062-05b5579b08e3/Untitled.png)
+![shadowing](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/e810d8d8-5e6f-459e-92fe-bf57689f70ed)
+
 
 ## Variable Arguments
 
 Variable Arguments is used to take a variable number of arguments. A method that takes   a variable number of arguments is a varagrs method 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/b97a391a-9104-42ec-b64d-c9d3d6558dd2/Untitled.png)
+![varagr](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/d63ec26b-9b8b-4cbe-baf9-1676f445a383)
+
 
 Function Overloading 
 
 Function Overloading happens when two function have same name
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/3dc8ef17-b4d9-4753-ad51-edc9a7cb0b7e/Untitled.png)
+![function overloading](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/45f820ac-acc7-4566-94a8-a7d53f31116f)
