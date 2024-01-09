@@ -112,7 +112,9 @@ git config --global user.email "MY_NAME@example.com"
 ```
 
 ```jsx
-git init // change the file git 
+git init // change the file git
+```
+```
 ls .a // show the hidden folders 
 ```
 
