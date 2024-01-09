@@ -96,3 +96,42 @@ A tree is a binary file that stores reference to blobs and trees which are also 
 - Every commit object has  a pointer to the parent commit object.
 - From a given commit, you can traverse back by looking at the parent pointer to view the history of the commit
 - if a commit has multiple parent commits, then that particular commit has been created by two branches
+
+  # Git Commands
+
+git configuration setup
+
+1. 
+
+```jsx
+Set your username:
+git config --global user.name "FIRST_NAME LAST_NAME"
+
+Set your email address:
+git config --global user.email "MY_NAME@example.com"
+```
+
+```jsx
+git init // change the file git 
+ls .a // show the hidden folders 
+```
+
+```jsx
+git add . // staging of git file
+```
+
+```jsx
+git status // check the status of history 
+```
+
+```jsx
+git commit -m "message" // sent local respiratory
+```
+
+```jsx
+git remote -v // location of github respiratory 
+```
+
+```jsx
+git remote add origin (repo link) // add the repo link 
+```
