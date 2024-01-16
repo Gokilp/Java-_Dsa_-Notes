@@ -99,9 +99,10 @@ A tree is a binary file that stores reference to blobs and trees which are also 
 
   # Git Commands
 
-git configuration setup
+
 
 ```jsx
+// git configuration setup
 Set your username:
 git config --global user.name "FIRST_NAME LAST_NAME"
 
