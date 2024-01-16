@@ -101,8 +101,6 @@ A tree is a binary file that stores reference to blobs and trees which are also 
 
 git configuration setup
 
-1. 
-
 ```jsx
 Set your username:
 git config --global user.name "FIRST_NAME LAST_NAME"
@@ -112,9 +110,7 @@ git config --global user.email "MY_NAME@example.com"
 ```
 
 ```jsx
-git init // change the file git
-```
-```
+git init // change the file git 
 ls .a // show the hidden folders 
 ```
 
@@ -136,4 +132,24 @@ git remote -v // location of github respiratory
 
 ```jsx
 git remote add origin (repo link) // add the repo link 
+```
+
+```jsx
+git push origin (branch) (main or master) //push the file to github
+```
+
+```jsx
+git clone (github link) // clone the reposistory 
+```
+
+```jsx
+touch (create file name.extension) // create a new file
+```
+
+```jsx
+git remote remove origin  // remove all the repo link the local repo
+```
+
+```jsx
+git pull --rebase origin main // rebase the repo
 ```
