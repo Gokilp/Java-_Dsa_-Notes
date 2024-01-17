@@ -98,11 +98,11 @@ A tree is a binary file that stores reference to blobs and trees which are also 
 - if a commit has multiple parent commits, then that particular commit has been created by two branches
 
   # Git Commands
+git configuration setup
 
-
+1. 
 
 ```jsx
-// git configuration setup
 Set your username:
 git config --global user.name "FIRST_NAME LAST_NAME"
 
@@ -154,3 +154,82 @@ git remote remove origin  // remove all the repo link the local repo
 ```jsx
 git pull --rebase origin main // rebase the repo
 ```
+
+```jsx
+git branch  //  list out all the branch of repo 
+
+```
+
+```jsx
+git branch  // list out all branch
+```
+
+```jsx
+git checkout -b (new branch name) // create a  new branch
+```
+
+```jsx
+git checkout (branch name) // chaning one to another branch
+```
+
+```jsx
+git diff (branch name) // differnate the branch name to main branch 
+```
+
+```jsx
+git branch -d (branch name) //delete branch
+```
+
+```jsx
+git restore --staged (file name) // remove on file on staging
+```
+
+```jsx
+git log  // show the history of commit the files
+```
+
+```jsx
+rm -rf (file name) // remove the file name
+```
+
+```jsx
+git reset (commit id) // remove the commit from the history of a projects it show on git log command
+```
+
+```jsx
+ git stash // staging the all file if  your wish not add history of properly 
+             //  you use stash command 
+             // stash -> marragie not used thing stored in back side of marriage stage 
+```
+
+```jsx
+git stash pop // come back the normal marriage back side of stage storing 
+```
+
+```jsx
+git stash clean // remove all the file in stashing area
+```
+
+```jsx
+git merge (new branch)  // new branch merge to main branch 
+
+```
+
+```jsx
+git reset --hard (log value) // reset the log value of hardly delete
+```
+
+# Pull Request
+
+A pull request (PR) is a method of submitting proposed changes to the Free Code Camp Repo (or any Repo, for that matter). You will make changes to copies of the files which make up in a personal fork,  contribute your changes in real world projects.
+
+# Merge conflicts
+
+- If you’ve ever worked on a team that's working on a large codebase, you’ve likely experienced merge conflicts while creating a pull request or merging two branches.
+- Even if you’ve never worked with a team or on a large codebase, it is still possible to have merge conflicts as long as you have more than one branch. In the process of merging one branch with another, a merge conflict may occur.
+- Merge conflicts can also occur even if you’re not working with team members. If you’ve made changes to the same file from different branches and the changes are conflicting, there will be a merge conflict.
+- On many occasions, Git automatically handles merging for you. But if there are conflicting changes you make to the same file, you have to resolve them manually.
+
+file:///home/gokil/Downloads/merge.png
+
+
