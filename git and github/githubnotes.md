@@ -229,8 +229,9 @@ A pull request (PR) is a method of submitting proposed changes to the Free Code 
 - Even if you’ve never worked with a team or on a large codebase, it is still possible to have merge conflicts as long as you have more than one branch. In the process of merging one branch with another, a merge conflict may occur.
 - Merge conflicts can also occur even if you’re not working with team members. If you’ve made changes to the same file from different branches and the changes are conflicting, there will be a merge conflict.
 - On many occasions, Git automatically handles merging for you. But if there are conflicting changes you make to the same file, you have to resolve them manually.
-f
 
 
 
+
+![Untitled](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/9ea4913d-0599-4971-843f-f2d0723626e6)
 
