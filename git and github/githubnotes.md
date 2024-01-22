@@ -219,6 +219,14 @@ git merge (new branch)  // new branch merge to main branch
 git reset --hard (log value) // reset the log value of hardly delete
 ```
 
+
+```jsx
+git fetch --all //update remote repo to local repo 
+
+
+```
+
+
 # Pull Request
 
 A pull request (PR) is a method of submitting proposed changes to the Free Code Camp Repo (or any Repo, for that matter). You will make changes to copies of the files which make up in a personal fork,  contribute your changes in real world projects.
