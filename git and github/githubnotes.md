@@ -222,10 +222,10 @@ git reset --hard (log value) // reset the log value of hardly delete
 
 ```jsx
 git fetch --all //update remote repo to local repo 
-
-
 ```
-
+```jsx
+git rebase //Rebasing is the process of moving or combining a sequence of commits to a new base commit
+```
 
 # Pull Request
 
