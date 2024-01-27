@@ -14,14 +14,17 @@ int[] varible ={ values };
 # Why do we need Arrays
 
 - Arrays is as data structure use to store a collection of data
+![1](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/65644c5e-9723-4538-8a6f-f8e7de7b8e45)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/0ac2ab9f-f75a-4e39-a9b7-4928fae42292/Untitled.png)
+
 
 # Internal Working Arrays
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/3b46143a-0b56-45ba-b89c-d880af1afa41/Untitled.png)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/442ba7e3-ec0b-4bea-82c5-26e43bc3d768/Untitled.png)
+![2](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/55e1208d-7385-47a4-adc5-b879686a70b9)
+
+![3](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/68214ce7-0e67-41db-8f6a-e97d23fc3098)
+
 
 # Internal Representation Arrays
 
@@ -32,9 +35,10 @@ int[] varible ={ values };
 
 # Index of arrays
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/4a75e238-24c7-4573-bb84-879edcbe0a4b/Untitled.png)
 
- 
+
+ ![4](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/e81b05bb-a512-483a-b16b-5c05382ff645)
+
 
 # for Each loop
 
@@ -72,14 +76,16 @@ import java.util.Arrays; // package
 Arrays.toString(array variable) 
 ```
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/9c315d3f-d384-4512-a5b2-1e339dfdb015/Untitled.png)
+
+![5](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/f110be27-860a-4bee-8160-615e2276692b)
 
 # Arrays passing to Function
 
 - Arrays is an mutable
 - String is an not mutable
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/7fc1c05b-5c5f-49ad-a84a-3f1eecfee2d8/Untitled.png)
+![6](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/24f76930-2488-4443-af59-9cf923682d88)
+
 
 # Multi Dimensional Arrays
 
