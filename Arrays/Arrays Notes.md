@@ -104,3 +104,94 @@ int [] [] ={
 //2 bracket -> columns 
    
 ```
+
+# Arrays List
+
+The `ArrayList` class is a resizable  which can be found in the `java.util` package.
+
+The difference between a built-in array and an `ArrayList` in Java, is that the size of an array cannot be modified (if you want to add or remove elements to/from an array, you have to create a new one). While elements can be added and removed from an `ArrayList` whenever you want
+
+```java
+import java.util.ArrayList; // import the ArrayList class
+
+ArrayList<String> cars = new ArrayList<String>(); // Create an ArrayList object
+```
+
+# Arrays Function
+
+**Adding Elements:**
+
+- **`add(element)`**: Adds the specified element to the end of the ArrayList.
+
+```java
+myList.add("Hello");
+myList.add("World");
+```
+
+**Accessing Elements:**
+
+- **`get(index)`**: Retrieves the element at the specified index.
+
+```java
+String element = myList.get(0); // Retrieves "Hello"
+```
+
+**Removing Elements:**
+
+- **`remove(index)`**: Removes the element at the specified index.
+- **`remove(element)`**: Removes the first occurrence of the specified element.
+
+```java
+myList.remove(0); // Removes the first element
+myList.remove("World"); // Removes "World"
+```
+
+**Size and Checking Empty:**
+
+- **`size()`**: Returns the number of elements in the ArrayList.
+- **`isEmpty()`**: Returns true if the ArrayList is empty.
+
+```java
+int size = myList.size(); // Returns the number of elements
+boolean empty = myList.isEmpty(); // Returns true or false
+```
+
+**Iterating through ArrayList:**
+
+- You can use loops or the enhanced for loop to iterate through the elements.
+
+```java
+for (String item : myList) {
+    System.out.println(item);
+}
+```
+
+**Checking for Element Existence:**
+
+- **`contains(element)`**: Returns true if the ArrayList contains the specified element.
+
+```java
+boolean containsHello = myList.contains("Hello");
+```
+
+**Clearing the ArrayList:**
+
+- **`clear()`**: Removes all elements from the ArrayList.
+
+```java
+myList.clear();
+```
+
+**Converting to Array:**
+
+- **`toArray()`**: Converts the ArrayList to an array.
+
+```java
+String[] myArray = myList.toArray(new String[0]);
+```
+
+# Array list Internal Working
+
+![arraylist](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/c83a87e2-a5a0-4511-b9a6-5a350afca714)
+
+- Arrays list working set of older array and add a new element older Arrary set deleted create a double of older arrays copy values the  copy to  newer arrays.
