@@ -194,4 +194,4 @@ String[] myArray = myList.toArray(new String[0]);
 
 ![arraylist](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/c83a87e2-a5a0-4511-b9a6-5a350afca714)
 
- "Create a new ArrayList by duplicating an existing ArrayList, then add a new element. Delete the older ArrayList. Create a duplicate of the older ArrayList, copy its values, and then transfer them to the newer ArrayList."
+- "Create a new ArrayList by duplicating an existing ArrayList, then add a new element. Delete the older ArrayList. Create a duplicate of the older ArrayList, copy its values, and then transfer them to the newer ArrayList."
