@@ -18,6 +18,7 @@ In Linux, the "PATH" is an environment variable that lists directories containin
 
 # Commands Linux
 
+```java
 pwd: Print working directory.
 ls: List directory contents.
 ls -a: List all files including hidden ones.
@@ -37,4 +38,5 @@ cat file1 file2: Display content of multiple files in sequence.
 System Output
 echo: Print a statement or variable.
 Additional Help
-man: Access the manual pages for comm
+man: Access the manual pages for commands. Use q to quit the manual.
+```
