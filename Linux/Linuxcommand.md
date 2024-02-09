@@ -20,4 +20,36 @@ In Linux, the "PATH" is an environment variable that lists directories containin
 
 ```java
 pwd  //print working directory
+
+ls  // list of directory
+
+ls -a  // list of hidden files
+
+ls -l  //show the property of files 
+
+ls -al // show the hidden files and hidden files properties
+
+ls -R  // Show the sub-directories of the files 
+
+cd    // change directory
+
+cd . // back previous directory 
+
+cd .. // back previous and previous folder
+
+cd ../folder name    // changing the folder to another folder to a specific path of the folder 
+
+cd ~/  // changing to the home directories or changing to any folder (Give folder name)
+
+cat  // show the files 
+
+cat > create  a new file    // create a new file and easy to access edit file in the same place and handling Easy
+// Exit ctrl + c 
+
+cat file1 file2  //shows the multiple files in same cat command
+
+echo // print the any statement 
+
+man  // helping command manual of all commands Quit press q
+
 ```
