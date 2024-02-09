@@ -17,7 +17,7 @@ Environment variables are dynamic values stored within a system, used by applica
 In Linux, the "PATH" is an environment variable that lists directories containing executable files. When you type a command, the system searches these directories to find the corresponding executable. Customizing the PATH allows users to run programs from any location in the terminal.
 
 # Commands Linux
-
+```
 pwd: Print working directory.
 ls: List directory contents.
 ls -a: List all files including hidden ones.
@@ -37,3 +37,4 @@ System Output
 echo: Print a statement or variable.
 Additional Help
 man: Access the manual pages for commands. Use 'q' to quit the manual.
+```
