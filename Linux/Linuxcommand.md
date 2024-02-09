@@ -17,6 +17,49 @@ Environment variables are dynamic values stored within a system, used by applica
 In Linux, the "PATH" is an environment variable that lists directories containing executable files. When you type a command, the system searches these directories to find the corresponding executable. Customizing the PATH allows users to run programs from any location in the terminal.
 
 # Commands Linux
+
+- **`pwd`**: Prints the current working directory.
+- **`ls -`**: Lists the contents of the current directory (the hyphen **``** here doesn't do anything special; it's likely a typo).
+- **`ls -a`**: Lists all files including hidden files (those starting with a dot **`.`**).
+- **`ls -l`**: Lists files in long format, displaying additional information such as permissions, ownership, size, and modification time.
+- **`ls -al`**: Combines options **`a`** and **`l`** to list all files in long format including hidden files.
+- **`ls -R`**: Lists files recursively, showing contents of subdirectories as well.
+- **`cd`**: Changes the current directory to the user's home directory.
+- **`cd .`**: Stays in the current directory (**`.`** refers to the current directory).
+- **`cd ..`**: Moves up one directory (the parent directory).
+- **`cd ../folder_name`**: Changes to a specific directory within the parent directory.
+- **`cd ~/`**: Changes to the user's home directory.
+- **`cat`**: Concatenates and displays the content of files.
+- **`cat > filename`**: Creates a new file and allows input to be written into it, terminated by Ctrl + C.
+- **`cat file1 file2`**: Displays the contents of multiple files.
+- **`echo`**: Prints text or variables to the terminal.
+- **`man`**: Displays the manual pages for commands. Press **`q`** to quit.
+- **`tr`**: Translates characters. Commonly used for converting text from lowercase to uppercase or vice versa.
+- **`mkdir`**: Creates a new directory.
+- **`mkdir folder/subfolder`**: Creates a directory within another directory.
+- **`mkdir -p folder/new_folder/subfolder`**: Creates nested directories, creating parent directories if they don't exist.
+- **`touch`**: Creates a new file.
+- **`cp`**: Copies files or directories.
+- **`mv`**: Moves or renames files or directories.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ```
 pwd: Print working directory.
 ls: List directory contents.
