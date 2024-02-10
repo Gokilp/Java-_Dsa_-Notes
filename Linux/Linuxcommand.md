@@ -61,23 +61,106 @@ In Linux, the "PATH" is an environment variable that lists directories containin
 
 
 ```
-pwd: Print working directory.
-ls: List directory contents.
-ls -a: List all files including hidden ones.
-ls -l: List files with details such as permissions and ownership.
-ls -al: List all files with detailed information, including hidden ones.
-ls -R: List subdirectories recursively.
-cd: Change directory.
-cd .: Go to the current directory.
-cd ..: Go to the parent directory.
-cd ../folder_name: Go to a specific folder in the parent directory.
-cd ~/: Go to the home directory.
-File Handling
-cat: Display file content.
-cat > filename: Create a new file or overwrite an existing file. Press Ctrl + C to exit file creation mode.
-cat file1 file2: Display content of multiple files in sequence.
-System Output
-echo: Print a statement or variable.
-Additional Help
-man: Access the manual pages for commands. Use 'q' to quit the manual.
+pwd  //print working directory
+
+ls - // list of directory
+
+ls -a  // list of hidden files
+
+ls -l  //show the property of files 
+
+ls -al // show the hidden files and hidden files properties
+
+ls -R  // Show the sub directories of the files 
+
+cd    // change directory
+
+cd . // back previous directory 
+
+cd .. // back previous and previous floder
+
+cd ../folder name    // changing the folder to another folder to specific path of folder 
+
+cd ~/  // changing to the home directories or changing to the any folder (Give folder name)
+
+
+cat  // show the files 
+
+cat > create  a new file    // create a new file and easy to access edit file in same place and handling Easy
+// Exit ctrl + c 
+
+cat file1 file2  // show the multiple file in same cat command
+
+echo // print the any statement 
+
+man  // helping command manual of all commands Quit press q
+
+tr - Translate the character // changing upper case to lower case   
+// eg cat filename | tr a-z A-Z
+
+cat filename \  // add a new line add file here the command
+
+mkdir   // make a new floder 
+
+mkdir folder/floder   // create a folder inside a folde of commands
+
+mkdir -p  folder/new folder / floder // create a middle of  folder of file path 
+
+touch // create a new File
+
+cp copying file new file // copy file to another file 
+
+cp -R  copying file new file  // -r used copy all the sub directories of folder 
+
+mv target source file  // move  select current file select to moved location 
+
+mv oldnamefile1 newnamefile1  //renaming a files 
+
+rm -f //remove the files 
+
+rm -r  //remove the folders 
+
+sudo  // super user do Acces the adminstartive work 
+
+df -m //free disk space 
+
+du -h // properties of files 
+
+head filename  // display frist 10 lines 
+
+head -n4 filename   //display frist 4 lines 
+
+tail filename  // display last 10 lines 
+
+tail  -n4 filename   //display last  4 lines 
+
+diff file1 file2   // comparsion of the files 
+
+find . //display all the files
+
+find . -type  d // display all the folder
+
+find . -type f // display all the inside the folder
+
+locate "*.filename" 
+
+find  -type d -name "folder name" // find the folder
+
+find  -type f -name "file name"  // finding the file name 
+
+find  -type d -name "*.txt"  //specific search  collection of files
+
+find  -type f -iname "file name"  //i used not a case sensitive 
+
+find . -type f -mmin +2  //find the mintues of file 
+
+find . -type f -mmin +2 -mmin -10 //find the minutes of file  
+
+find .-size +(sizeoffile)  // searching on file size
+
+find  . -type f -maxdepth 1  // specified directory and its subdirectories.
+
+find. -empty // show the empty folder
+
+
 ```
