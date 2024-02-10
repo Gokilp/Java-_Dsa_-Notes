@@ -18,29 +18,68 @@ In Linux, the "PATH" is an environment variable that lists directories containin
 
 # Commands Linux
 
-- **`pwd`**: Prints the current working directory.
-- **`ls -`**: Lists the contents of the current directory (the hyphen **``** here doesn't do anything special; it's likely a typo).
-- **`ls -a`**: Lists all files including hidden files (those starting with a dot **`.`**).
-- **`ls -l`**: Lists files in long format, displaying additional information such as permissions, ownership, size, and modification time.
-- **`ls -al`**: Combines options **`a`** and **`l`** to list all files in long format including hidden files.
-- **`ls -R`**: Lists files recursively, showing contents of subdirectories as well.
-- **`cd`**: Changes the current directory to the user's home directory.
-- **`cd .`**: Stays in the current directory (**`.`** refers to the current directory).
-- **`cd ..`**: Moves up one directory (the parent directory).
-- **`cd ../folder_name`**: Changes to a specific directory within the parent directory.
-- **`cd ~/`**: Changes to the user's home directory.
-- **`cat`**: Concatenates and displays the content of files.
-- **`cat > filename`**: Creates a new file and allows input to be written into it, terminated by Ctrl + C.
-- **`cat file1 file2`**: Displays the contents of multiple files.
-- **`echo`**: Prints text or variables to the terminal.
-- **`man`**: Displays the manual pages for commands. Press **`q`** to quit.
-- **`tr`**: Translates characters. Commonly used for converting text from lowercase to uppercase or vice versa.
-- **`mkdir`**: Creates a new directory.
-- **`mkdir folder/subfolder`**: Creates a directory within another directory.
-- **`mkdir -p folder/new_folder/subfolder`**: Creates nested directories, creating parent directories if they don't exist.
-- **`touch`**: Creates a new file.
-- **`cp`**: Copies files or directories.
-- **`mv`**: Moves or renames files or directories.
+- **`pwd`**: Print working directory.
+- **`ls -`**: List contents of the current directory.
+- **`ls -a`**: List all files including hidden files.
+- **`ls -l`**: List files with properties.
+- **`ls -al`**: List hidden files with properties.
+- **`ls -R`**: List files and subdirectories recursively.
+- **`cd`**: Change directory.
+- **`cd .`**: Stay in the current directory.
+- **`cd ..`**: Move up one directory.
+- **`cd ../folder_name`**: Change to a specific directory.
+- **`cd ~/`**: Change to the home directory.
+
+## **File Commands:**
+
+- **`cat`**: Display file contents.
+- **`cat > filename`**: Create a new file.
+- **`cat file1 file2`**: Display multiple files.
+- **`echo`**: Print a statement.
+- **`tr`**: Translate characters (e.g., change case).
+- **`mkdir`**: Make a new directory.
+- **`mkdir folder/subfolder`**: Create nested directories.
+- **`mkdir -p folder/new_folder/subfolder`**: Create nested directories.
+- **`touch`**: Create a new file.
+- **`cp`**: Copy files or directories.
+- **`cp -R`**: Copy directories recursively.
+- **`mv`**: Move or rename files.
+- **`rm -f`**: Remove files forcefully.
+- **`rm -r`**: Remove directories recursively.
+
+## **System Commands:**
+
+- **`sudo`**: Execute a command as the superuser.
+- **`df -m`**: Display free disk space.
+- **`du -h`**: Display file sizes.
+
+## **File Viewing:**
+
+- **`head`**: Display first lines of a file.
+- **`head -n4`**: Display first lines of a file.
+- **`tail`**: Display last lines of a file.
+- **`tail -n4`**: Display last lines of a file.
+
+## **File Comparison:**
+
+- **`diff`**: Compare files.
+
+## **File Search:**
+
+- **`find .`**: Search for files and directories recursively.
+- **`locate "*.filename"`**: Search files using a database.
+- **`find -type d -name "folder_name"`**: Search for directories.
+- **`find -type f -name "file_name"`**: Search for files.
+- **`find -type d -name "*.txt"`**: Search for directories.
+- **`find -type f -iname "file_name"`**: Search for files ignoring case.
+- **`find . -type f -mmin +2`**: Find files modified more than 2 minutes ago.
+- **`find . -type f -mmin +2 -mmin -10`**: Find files modified between 2 and 10 minutes ago.
+- **`find . -size +(size_of_file)`**: Find files larger than specified size.
+
+## **Miscellaneous:**
+
+- **`find . -type f -maxdepth 1`**: Search files in the current directory only.
+- **`find . -empty`**: Show empty folders.
 
 
 
@@ -71,15 +110,15 @@ ls -l  //show the property of files
 
 ls -al // show the hidden files and hidden files properties
 
-ls -R  // Show the sub directories of the files 
+ls -R  // Show the sub-directories of the files 
 
 cd    // change directory
 
 cd . // back previous directory 
 
-cd .. // back previous and previous floder
+cd .. // back previous and previous folder
 
-cd ../folder name    // changing the folder to another folder to specific path of folder 
+cd ../folder name    // changing the folder to another folder to a specific path of the folder 
 
 cd ~/  // changing to the home directories or changing to the any folder (Give folder name)
 
@@ -89,7 +128,7 @@ cat  // show the files
 cat > create  a new file    // create a new file and easy to access edit file in same place and handling Easy
 // Exit ctrl + c 
 
-cat file1 file2  // show the multiple file in same cat command
+cat file1 file2  // show the multiple files in the same cat command
 
 echo // print the any statement 
 
@@ -102,15 +141,15 @@ cat filename \  // add a new line add file here the command
 
 mkdir   // make a new floder 
 
-mkdir folder/floder   // create a folder inside a folde of commands
+mkdir folder/folder   // create a folder inside a folder of commands
 
-mkdir -p  folder/new folder / floder // create a middle of  folder of file path 
+mkdir -p  folder/new folder / folder // create a middle of  the folder of file path 
 
 touch // create a new File
 
 cp copying file new file // copy file to another file 
 
-cp -R  copying file new file  // -r used copy all the sub directories of folder 
+cp -R  copying file new file  // -r used to copy all the subdirectories of the folder 
 
 mv target source file  // move  select current file select to moved location 
 
@@ -138,7 +177,7 @@ diff file1 file2   // comparsion of the files
 
 find . //display all the files
 
-find . -type  d // display all the folder
+find . -type  d //to display all the folder
 
 find . -type f // display all the inside the folder
 
