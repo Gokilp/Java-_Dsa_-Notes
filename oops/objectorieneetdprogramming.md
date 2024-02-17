@@ -21,10 +21,13 @@ While this approach works, it can quickly become unwieldy as the program grows. 
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/44ffdcdb-2e14-4489-9846-a40d2d1b1e29/Untitled.png)
 
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/0fbdd402-181f-4c8b-a0a8-2ce137ea7e46/Untitled.png)
+
 - Classes is created a own purpose contains own **Methods and  properties.**
 - Class is a template of an Object
 - Object is an instance of classes
 
 > Classes ⇒ Logical Value  // Not Occpuing Space in Memory 
 object ⇒ physical object   // Occuping  space in memory
+>
 >
