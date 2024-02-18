@@ -101,5 +101,95 @@ public class Oops{
 ```
 
 # Constructor
->
->
+
+- Constructor is special type of function But Run you create a object and allows ttom sme variables
+- Constructor is same name of Class
+- Immediately called object is created
+- Constructor initilizing the Values
+- Constructor No return Type
+- Constructor Value No modified.
+- The constructor is a useful special type of function responsible for handling object properties' values and ensuring that they cannot be modified from outside the class.
+
+### Advantage of constructor
+
+1. **Initialization**: Constructors initialize object attributes, ensuring a defined starting state.
+2. **Encapsulation**: They enforce encapsulation by controlling attribute initialization.
+3. **Convenience**: Simplify object creation by providing a standardized process.
+4. **Default Values**: Offer default values for attributes, enhancing flexibility.
+5. **Inheritance and Polymorphism**: Play a key role in inheritance and polymorphism, enabling subclass object creation and specialization.
+
+### Types of Constructor
+
+- Default Constructor
+- Parameterized Constructor
+- Copy Constructor
+
+## this Keyword
+
+- The **`this`** keyword in Java refers to the current object.
+- It is typically used to distinguish between instance variables and local variables, to invoke methods or constructors of the current object, or to pass the current object as an argument.
+- However, it cannot be used in static methods.
+- Understanding its usage is crucial for maintaining clarity and avoiding ambiguity in Java code.
+
+```java
+public class Oops{
+
+      static class Student{
+
+        int rno;
+        float   marks;
+        String name;
+      
+        Student () {
+        // Default values
+        this.rno = 10;        // this word reference pointing the current Object 
+        this.marks = 20.0f;  
+        this.name = "gokil";
+        }
+
+        
+    }
+
+      public static void main(String[] args) {
+        Student student1 = new Student();
+        Student Rahul = new Student();
+          System.out.println(student1.rno);
+          System.out.println(student1.marks);
+          System.out.println(student1.name);
+      }
+}
+```
+
+### constructor Value modified
+
+- Constructor only modified passing arugments
+- Constructor using Modified Every Object Values  using the parameters /Arugments values
+
+```java
+public class Oops {
+
+    static class Student {
+
+        int rno;
+        float marks;
+        String name;
+
+        // Constructor with parameters to modify values
+        public Student(int rno, float marks, String name) {
+            this.rno = rno;
+            this.marks = marks;
+            this.name = name;
+        }
+    }
+
+    public static void main(String[] args) {
+        // Creating a Student object with specific values using the constructor
+        Student student1 = new Student(10, 20.0f, "gokil");
+
+        // Outputting the values of student1
+        System.out.println(student1.rno);
+        System.out.println(student1.marks);
+        System.out.println(student1.name);
+    }
+}
+```
