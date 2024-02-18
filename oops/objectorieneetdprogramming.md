@@ -193,3 +193,43 @@ public class Oops {
     }
 }
 ```
+
+### Constructor Overloading
+
+- Constructor overloading is indeed an important concept in polymorphism.
+- In object-oriented principles, constructors do indeed consider parameters/arguments (values).
+- A constructor with no arguments is called a default constructor.
+
+```java
+public class Oops {
+
+    public static class Student{
+
+        int rno;
+        float marks;
+        String name;
+    
+    Student() {   //  constructor consider calling the size of Arguments 
+
+        this.rno=10;
+        this.marks=20.0f;
+        this.name="gokil";
+    }
+    Student(int rollno,float marks,String Name) // constructor consider  calling the size of Arguments 
+    {
+        this.rno=rollno;
+        this.marks=marks;
+        this.name=Name;
+    }
+}
+    public static void main(String[] args) {
+         Student gokil = new Student(20,10.0f,"Rahul");
+    
+        Student Rahul = new Student();
+        System.out.println(Rahul.marks);
+
+    }
+
+   
+}
+```
