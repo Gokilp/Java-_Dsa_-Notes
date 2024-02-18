@@ -287,3 +287,39 @@ public class Oops{
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/a7a6aee8-2450-41bb-b530-3e3b8e396764/Untitled.png)
 
 ## Wrapper Classes
+
+- wrapper classes are used to convert primitive data types into objects, as Java is an object-oriented programming language where everything is treated as an object.
+- Wrapper classes is immutable
+- wrapper classes in scenarios where objects are required, such as collections (ArrayList, HashMap) which can't directly store primitive types.
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/49671ea6-0b35-4b14-8305-d28013a2f88c/Untitled.png)
+
+- Wrapper classes contains  internal side
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/85bea851-6fd2-4647-8204-f2280261fd68/Untitled.png)
+
+### Arritubutes of  Wrapper  Classes
+
+```java
+
+Integer i = Integer.valueOf(value); // Boxing, Wrapping 
+
+int j = i.int Value(i) // unboxing
+
+Integer i3 = 30; // auto boxing 
+int k = i2;
+
+int i = Integer.parseInt(varible);
+```
+
+## Final Key word
+
+- When a non primitive is  final, you cannot reassign cannot  the value.
+- primitive data type final key word you can Modified.
+- The **`final`** keyword in Java is used to declare constants, immutable variables, and prevent method overriding or subclassing.
+- It makes variables unmodifiable after initialization, methods unoverridable, and classes unextendable. It ensures code robustness, improves performance, and clarifies intent by signaling immutability or constant values.
+
+### Garbage Collections
+
+- If there is an object without reference variable then object will be
+destroyed by “Garbage Collection
