@@ -29,5 +29,77 @@ While this approach works, it can quickly become unwieldy as the program grows. 
 
 > Classes ⇒ Logical Value  // Not Occpuing Space in Memory 
 object ⇒ physical object   // Occuping  space in memory
+> 
+
+## Objects
+
+- Object Occuping space in Memory Handle
+- Object Access using . dot operator using Reference Variable
+- Instance Variable is Object inside the properties
+- It is useful to think of an object’s identity as the place where its value is stored in memory.
+- The behavior of an object is the effect of data-type operations.
+- The dot operator links the name of the object with the name of an instance variable.   Although commonly referred to as the dot operator, the formal specification for Java categorizes the . as a separator.
+
+## Class and Object  declare
+
+### Declaring a Class
+
+```java
+// create a class 
+
+Class Student {
+
+int rno;   //rno;
+int marks; //Marks 
+String name;  // Name 
+
+```
+
+### Declaring Object
+
+```java
+Student student1 = new Student();
+```
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/188bddfe-d188-40b1-b14c-e9137cea5eb1/Untitled.png)
+
+- New Word  is create a Dynamically allocate memory & Return  a reference to it
+
+## Runtime and compile Time
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/c4d9d0cc-cee9-45a0-a5b6-86882c2377d8/Untitled.png)
+
+### Complie Time
+
+- Compile time refers to the period during which a program is translated from human-readable source code into machine-readable instructions by a compiler.
+- Compile time Excute code Only initialize stack Memory
+
+### Run Time
+
+- During runtime, variables are allocated memory, objects are created, and functions/methods are executed based on the flow of the program.
+- Java programming  Dynamically create object in Run time.
+
+### Manuplate the object and classes
+
+```java
+public class Oops{
+
+      static class Student{
+
+        int rno;
+        float  marks;
+        String name;
+      }
+      public static void main(String[] args) {
+          Student student1 = new Student();
+         
+          System.out.println(student1.rno);
+          System.out.println(student1.marks);
+          System.out.println(student1.name);
+      }
+}
+```
+
+# Constructor
 >
 >
