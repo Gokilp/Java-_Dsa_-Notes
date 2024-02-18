@@ -233,3 +233,57 @@ public class Oops {
    
 }
 ```
+
+## calling construct to another constructor
+
+- call one constructor from another constructor in the same class using the **`this()`** keyword.
+- This is useful when you have multiple constructors in a class and want to avoid code duplication by reusing common initialization logic.
+1. **`this()` Keyword**:
+    - Use **`this()`** to call another constructor from within a constructor.
+    - It must be the first statement in the constructor.
+2. **Avoiding Redundancy**:
+    - Helps in avoiding repetition of initialization logic.
+    - Centralizes common initialization steps.
+3. **Parameter Passing**:
+    - Arguments can be passed to the constructor being called using **`this()`**.
+    - Ensure argument types match the parameter list of the target constructor.
+4. **Code Readability**:
+    - Enhances code readability by providing a clear flow of initialization logic.
+
+```java
+public class Oops{
+
+ public static class Student{
+
+    int rno;
+    String name;
+
+    Student(int rollno,String Name)
+    {
+      rno =rollno;
+      name=Name;
+    }
+    Student()
+    {
+        this(12,"gokil");
+    }
+ }
+   public static void main(String [] args)
+   {
+      Student cs = new Student();
+
+      System.out.println(cs.name);
+
+   }
+
+}
+```
+
+## Memory Allociatiom New Key Word
+
+- New word also an Objects and stored in Heap Memory
+- Heap mermory Object point to another Reference Variable
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/a7a6aee8-2450-41bb-b530-3e3b8e396764/Untitled.png)
+
+## Wrapper Classes
