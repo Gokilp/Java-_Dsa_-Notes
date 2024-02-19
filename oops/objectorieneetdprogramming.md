@@ -364,6 +364,29 @@ public class Example {
 }
 ```
 
+```java
+public class Human {
+    int age;
+    String name;
+    int salary;
+    boolean married;
+    static long population;  // static not referncing an objects 
+
+    static void message() {
+        System.out.println("Hello world");
+//        System.out.println(this.age); // cant use this over here
+    }
+
+    public Human(int age, String name, int salary, boolean married) {
+        this.age = age;
+        this.name = name;
+        this.salary = salary;
+        this.married = married;
+        Human.population += 1; // class name give the static Methods calling 
+    }
+}
+```
+
 **Static Methods**: Methods that belong to the class rather than any instance of the class. They can be called without creating an instance of the class.
 
 - **Definition**: Methods that belong to the class, not objects.
@@ -373,6 +396,49 @@ public class Example {
 public class Example {
     static void display() { // Static method
         System.out.println("Hello, World!");
+    }
+}
+```
+
+```java
+package com.kunal.staticExample;
+
+public class Main {
+    public static void main(String[] args) {
+//        Human kunal = new Human(22, "Kunal", 10000, false);
+//        Human rahul = new Human(34, "Rahul", 15000, true);
+//        Human arpit = new Human(34, "arpit", 15000, true);
+//
+//        System.out.println(Human.population);
+//        System.out.println(Human.population);
+//        System.out.println(Human.population);
+
+        Main funn = new Main();
+        funn.fun2();
+
+    }
+
+    // this is not dependent on objects
+    static void fun() {
+//        greeting(); // you cant use this because it requires an instance
+        // but the function you are using it in does not depend on instances
+
+        // you cannot access non static stuff without referencing their instances in
+        // a static context
+
+        // hence, here I am referencing it
+        Main obj = new Main();
+        obj.greeting();
+    }
+
+    void fun2() {
+        greeting();
+    }
+
+    // we know that something which is not static, belongs to an object
+    void greeting() {
+//        fun();
+        System.out.println("Hello world");
     }
 }
 ```
@@ -391,6 +457,35 @@ public class Example {
 }
 ```
 
+```java
+package com.kunal.staticExample;
+
+// this is a demo to show initialisation of static variables
+public class StaticBlock {
+    static int a = 4;
+    static int b;
+
+    // will only run once, when the first obj is create i.e. when the class is loaded for the first time
+    static {
+        System.out.println("I am in static block");
+        b = a * 5;
+    }
+
+    public static void main(String[] args) {
+        StaticBlock obj = new StaticBlock();
+        System.out.println(StaticBlock.a + " " + StaticBlock.b);
+
+        StaticBlock.b += 3;
+
+        System.out.println(StaticBlock.a + " " + StaticBlock.b);
+
+        StaticBlock obj2 = new StaticBlock();
+        System.out.println(StaticBlock.a + " " + StaticBlock.b);
+    }
+
+}
+```
+
 **Static Nested Classes**: Classes that are declared inside another class and marked as static. They can be accessed without instantiating the outer class.
 
 - **Definition**: Nested class declared inside another class.
@@ -402,6 +497,94 @@ public class Outer {
         void display() {
             System.out.println("Nested class method");
         }
+    }
+}
+```
+
+```java
+package com.kunal.staticExample;
+
+import java.util.Arrays;
+
+public class InnerClasses {
+
+    static class Test {
+        String name;
+        public Test(String name) {
+            this.name = name;
+        }
+
+        @Override
+        public String toString() {
+            return name;
+        }
+    }
+
+    public static void main(String[] args) {
+        Test a = new Test("Kunal");
+        Test b = new Test("Rahul");
+
+        System.out.println(a);
+
+//        System.out.println(a.name);
+//        System.out.println(b.name);
+    }
+}
+
+//static class A {
+//
+//}
+```
+
+### Singleton Classes
+
+In object-oriented programming, a java singleton class is a class that can have only one object (an instance of the class) at a time. After the first time, if we try to instantiate the Java Singleton classes, the new variable also points to the first instance created.
+
+1. Make a constructor private.
+2. Write a static method that has the return type object of this singleton class. Here, the concept of Lazy initialization is used to write this static method.
+
+```java
+package com.kunal.singleton;
+
+import com.kunal.access.A;
+
+public class Singleton {
+    private Singleton () {
+
+    }
+
+    private static Singleton instance;
+
+    public static Singleton getInstance() {
+        // check whether 1 obj only is created or not
+        if (instance == null) {
+            instance = new Singleton();
+        }
+
+        return instance;
+    }
+
+}
+```
+
+```java
+package com.kunal.singleton;
+
+import com.kunal.access.A;
+
+public class Main {
+    public static void main(String[] args) {
+        Singleton obj1 = Singleton.getInstance();
+
+        Singleton obj2 = Singleton.getInstance();
+
+        Singleton obj3 = Singleton.getInstance();
+
+        // all 3 ref variables are pointing to just one object
+
+        A a = new A(10, "Kunal");
+        a.getNum();
+//        int n = a.num;
     }
 }
 ```
