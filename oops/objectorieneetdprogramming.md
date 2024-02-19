@@ -324,13 +324,29 @@ int i = Integer.parseInt(varible);
 - If there is an object without reference variable then object will be
 destroyed by “Garbage Collection
 
+# Java Packages & API
 
-### Package
-
-- A package in Java is used to group related classes.
-- Think of it as a folder in a file directory. We use packages to avoid name conflicts, and to write a better maintainable code.
-
- Packages are divided into two categories:
+A package in Java is used to group related classes. Think of it as **a folder in a file directory**. We use packages to avoid name conflicts, and to write a better maintainable code. Packages are divided into two categories:
 
 - Built-in Packages (packages from the Java API)
 - User-defined Packages (create your own packages)
+
+## Built in packages
+
+The Java API is a library of prewritten classes, that are free to use, included in the Java Development Environment.
+
+The library contains components for managing input, database programming, and much much more. The complete list can be found at Oracles website: https://docs.oracle.com/javase/8/docs/api/.
+
+# User-defined Packages
+
+To create your own package, you need to understand that Java uses a file system directory to store them. Just like folders on your computer:
+
+# Example
+
+`└── root
+  └── mypack
+    └── MyPackageClass.java`
+
+To create a package, use the `package` keyword:
+
+### Static Keyword
