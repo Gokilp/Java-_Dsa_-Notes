@@ -349,4 +349,59 @@ To create your own package, you need to understand that Java uses a file system 
 
 To create a package, use the `package` keyword:
 
-### Static Keyword
+# Static Keyword
+
+Static method using an referencing without object  
+
+**Static Variables**: Variables that belong to the class itself, rather than any specific instance of the class. They are shared among all instances of the class.
+
+- **Definition**: Shared variables for all objects of a class.
+- **Example**:
+
+```java
+public class Example {
+    static int count = 0; // Static variable
+}
+```
+
+**Static Methods**: Methods that belong to the class rather than any instance of the class. They can be called without creating an instance of the class.
+
+- **Definition**: Methods that belong to the class, not objects.
+- **Example**:
+
+```java
+public class Example {
+    static void display() { // Static method
+        System.out.println("Hello, World!");
+    }
+}
+```
+
+**Static Block**: A block of code enclosed in curly braces **`{}`** inside a class, preceded by the **`static`** keyword. It is executed when the class is loaded into memory.
+
+- **Definition**: Special code block executed when class is loaded.
+- **Example**:
+
+```java
+public class Example {
+    static {
+        // Static block
+        System.out.println("Static block initialized.");
+    }
+}
+```
+
+**Static Nested Classes**: Classes that are declared inside another class and marked as static. They can be accessed without instantiating the outer class.
+
+- **Definition**: Nested class declared inside another class.
+- **Example**:
+
+```java
+public class Outer {
+    static class Nested {
+        void display() {
+            System.out.println("Nested class method");
+        }
+    }
+}
+```
