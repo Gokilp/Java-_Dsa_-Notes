@@ -588,3 +588,6 @@ public class Main {
     }
 }
 ```
+
+inherientae
+ploymorphism 
