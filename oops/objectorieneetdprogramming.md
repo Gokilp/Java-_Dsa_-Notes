@@ -691,3 +691,104 @@ public class Oops{
 
 - In object-oriented programming (OOP), when you create an object of a parent class, you can't directly access the members or methods of derived classes. The reason is that the object created is of the parent class type, so it only contains the attributes and methods defined in the parent class.
 - However, if the methods or attributes in the derived classes are accessible through inheritance (i.e., they are not private or protected), you can access them by creating an object of the derived class and then accessing those members or methods through that object.
+
+```java
+
+     Box box5 = new BoxWeight(2, 3, 4, 8);
+        System.out.println(box5.w);  // you can inherit deviered class to base class
+                                     // constructor automatically deside class file
+
+        // there are many variables in both parent and child classes
+        // you are given access to variables that are in the ref type i.e. BoxWeight
+        // hence, you should have access to weight variable
+        // this also means, that the ones you are trying to access should be initialised
+        // but here, when the obj itself is of type parent class, how will you call the constructor of child class
+        // this is why error
+        BoxWeight box6 = new Box(2, 3, 4); 
+        System.out.println(box6);  // you can  inherit base  class to deviered class 
+                                     // constructor automatically deside class file
+
+```
+
+## Super class
+
+- Super is reference to the  parent class constructor .
+- Super classes is always reference to the parent constructors
+- **`this`** keyword: Refers to the current instance of the class, used to access instance variables or methods of the current object.
+- **`super`** keyword: Refers to the parent class, used to call the parent class's constructor or methods from the subclass.
+
+### superclass methods and variables:
+
+The **`super`** keyword can be used to access methods and variables of the superclass from within the subclass. This is particularly useful when the subclass overrides a method of the superclass but still needs to call the superclass's version of that method.
+
+```java
+
+class Vehicle { 
+	int maxSpeed = 120; 
+} 
+
+// sub class Car extending vehicle 
+class Car extends Vehicle { 
+	int maxSpeed = 180; 
+
+	void display() 
+	{ 
+		
+		System.out.println("Maximum Speed: "
+						+ super.maxSpeed); // calling constructor on parent class 
+                               // print value maxspeed is 120
+	} 
+} 
+
+// Driver Program 
+class Test { 
+	public static void main(String[] args) 
+	{ 
+		Car small = new Car(); 
+		small.display(); 
+	} 
+}
+
+```
+
+### Calling the superclass constructor:
+
+When you create an object of a subclass, the constructor of the superclass is called implicitly before the constructor of the subclass. However, you can explicitly call a specific constructor of the superclass using the **`super()`** keyword. This is useful when the superclass has multiple constructors, and you want to call a specific one
+
+```java
+class Superclass {
+    void display() {
+        System.out.println("Superclass method");
+    }
+}
+
+class Subclass extends Superclass {
+    @Override
+    void display() {
+        super.display(); // Calls the superclass method
+        System.out.println("Subclass method");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Subclass obj = new Subclass();
+        obj.display();
+    }
+}
+
+Output code 
+
+Superclass constructor
+Subclass constructor
+
+```
+
+## Types of Inheritance
+
+- Single inheritance
+- Multiple inheritance
+- Multilevel inheritance
+- Hierarchical inheritance
+- Hybrid inheritance
+- Multipath inheritance
