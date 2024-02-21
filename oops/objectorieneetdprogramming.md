@@ -765,7 +765,7 @@ class Superclass {
 class Subclass extends Superclass {
     @Override
     void display() {
-        super.display(); // Calls the superclass method
+        super.display(); // Calls the superclass method parents classes 
         System.out.println("Subclass method");
     }
 }
