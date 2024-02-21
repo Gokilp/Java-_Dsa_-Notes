@@ -765,7 +765,7 @@ class Superclass {
 class Subclass extends Superclass {
     @Override
     void display() {
-        super.display(); // Calls the superclass method parents classes 
+        super.display(); // Calls the superclass method
         System.out.println("Subclass method");
     }
 }
@@ -791,4 +791,41 @@ Subclass constructor
 - Multilevel inheritance
 - Hierarchical inheritance
 - Hybrid inheritance
-- Multipath inheritance
+
+### Single Inheritance
+
+Single Inheritance is one classes extends from another classes 
+
+In the oops concept create object dervied classes to base classes 
+
+Example
+
+![1000020284.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/f2571e4e-2e55-46c9-8579-a4ae25a3d0d5/1000020284.jpg)
+
+```java
+class derived-class extends base-class  
+{  
+   //methods and fields  
+}
+```
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/ca4b363d-7311-4b53-90f5-81aad2f5fb60/Untitled.png)
+
+### multi level inheritance
+
+- In Multilevel Inheritance, a derived class will be inheriting a base class, and as well as the derived class also acts as the base class for other classes.
+- In the below image, class A serves as a base class for the derived class B, which in turn serves as a base class for the derived class C.
+
+Visual Represtation
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/222de7e9-a2e9-4827-9ea6-df8b8d1f5a3b/Untitled.png)
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/337cf01a-1f2c-4cef-b7e7-711758aa51bb/Untitled.png)
+
+### Multiple Inheritance
+
+In Multiple inheritances, one class can have more than one superclass and inherit features from all parent classes. 
+
+ Java does not support multiple inheritances with classes. In Java, we can achieve multiple inheritances only through Interfaces. In the image below, Class C is derived from interfaces A and B.
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/8b4ceef2-ec4b-41c0-bf95-0073ea543560/Untitled.png)
