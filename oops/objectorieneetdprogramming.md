@@ -313,8 +313,6 @@ public class Main {
 - New word also an Objects and stored in Heap Memory
 - Heap mermory Object point to another Reference Variable
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/a7a6aee8-2450-41bb-b530-3e3b8e396764/Untitled.png)
-
 ## Wrapper Classes
 
 - wrapper classes are used to convert primitive data types into objects, as Java is an object-oriented programming language where everything is treated as an object.
@@ -626,3 +624,61 @@ public class Main {
 - Abstraction
 
 ## Inheritance
+
+- Inheritance is an important pillar of OOP(Object-Oriented Programming). It is the mechanism in Java by which one class is allowed to inherit the features(fields and methods) of another class
+- Java, Inheritance means creating new classes based on existing ones. A class that inherits from another class can reuse the methods and fields of that class. In addition.
+- In heritance is base  classes inherit   to derived class you can also create a new properties on derived classes   and  also used existing base class  properties .
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/813a2fea-0a38-4dc1-bb07-d24b7909f536/Untitled.png)
+
+## Syntax
+
+```java
+class derived-class extends base-class  
+{  
+   //methods and fields  
+}
+```
+
+```java
+public class Oops{
+
+  static class Department{
+  
+   String college;
+   String  Department;
+   int student_ls;
+   int Staff_ls;
+   
+   Department()
+   {
+      college =" IIT Madras";
+      Department = "Computer Science";
+      Staff_ls=20;
+      student_ls=100; 
+   }
+}
+  public static class Student extends Department{
+   
+   String Mentor_name;
+   int  student_rollno;
+   int semster;
+   
+   Student()
+   {
+      Mentor_name="ram";
+      student_rollno = 01;
+      semster = 01;
+   }
+
+  }
+
+   public static void main(String[] args) {
+       Student student = new Student();
+
+       System.out.println(student.Mentor_name);
+       System.out.println(student.Department);
+   }
+
+}
+```
