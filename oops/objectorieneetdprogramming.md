@@ -279,6 +279,35 @@ public class Oops{
 }
 ```
 
+### Copy Constructor
+
+- java copy constructor returns a copy of the specified object by taking the existing object as an argument.
+- To create a copy constructor, we need to take the existing object as an argument and initialize the values of instance variables with the values obtained in the object.
+
+```java
+class Person {
+    String name;
+    
+    // Copy constructor
+    public Person(Person other) {
+        this.name = other.name;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Person person1 = new Person();
+        person1.name = "John";
+        
+        // Using the copy constructor to create a new object
+        Person person2 = new Person(person1);
+        
+        System.out.println("Person 1: " + person1.name);
+        System.out.println("Person 2: " + person2.name);
+    }
+}
+```
+
 ## Memory Allociatiom New Key Word
 
 - New word also an Objects and stored in Heap Memory
@@ -589,5 +618,11 @@ public class Main {
 }
 ```
 
-inherientae
-ploymorphism 
+# Principle of oops
+
+- Inheritance
+- polymorphism
+- Encapsulation
+- Abstraction
+
+## Inheritance
