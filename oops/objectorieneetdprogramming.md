@@ -313,6 +313,8 @@ public class Main {
 - New word also an Objects and stored in Heap Memory
 - Heap mermory Object point to another Reference Variable
 
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/a7a6aee8-2450-41bb-b530-3e3b8e396764/Untitled.png)
+
 ## Wrapper Classes
 
 - wrapper classes are used to convert primitive data types into objects, as Java is an object-oriented programming language where everything is treated as an object.
@@ -682,3 +684,10 @@ public class Oops{
 
 }
 ```
+
+# Access to object
+
+![1000020284.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/f2571e4e-2e55-46c9-8579-a4ae25a3d0d5/1000020284.jpg)
+
+- In object-oriented programming (OOP), when you create an object of a parent class, you can't directly access the members or methods of derived classes. The reason is that the object created is of the parent class type, so it only contains the attributes and methods defined in the parent class.
+- However, if the methods or attributes in the derived classes are accessible through inheritance (i.e., they are not private or protected), you can access them by creating an object of the derived class and then accessing those members or methods through that object.
