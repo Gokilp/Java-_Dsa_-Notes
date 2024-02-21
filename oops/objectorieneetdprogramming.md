@@ -828,4 +828,21 @@ In Multiple inheritances, one class can have more than one superclass and inher
 
  Java does not support multiple inheritances with classes. In Java, we can achieve multiple inheritances only through Interfaces. In the image below, Class C is derived from interfaces A and B.
 
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/eea07492-fcb9-477d-af8c-fa949edd6b21/Untitled.png)
+
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/8b4ceef2-ec4b-41c0-bf95-0073ea543560/Untitled.png)
+
+### Hierarchical Inheritance
+
+In Hierarchical Inheritance, one class serves as a superclass (base class) for more than one subclass. In the below image, class A serves as a base class for the derived classes B, C, and D.
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/11d4ba69-c14f-499d-8dfe-c3ee927fdfa2/Untitled.png)
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/27c4b478-4347-46ed-aff2-05f73b356d6a/Untitled.png)
+
+### Hybrid inheritance
+
+- Hybird Inheritance combination of single and Multiple inheritance
+- Hybird Inheritance  is not access java but only use in interfaces
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/8ca136c8-6815-4e33-afbe-b8d7fd836cbe/Untitled.png)
