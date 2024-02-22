@@ -949,7 +949,8 @@ parent object = new child();
 // Java run a method in referece in child classes only not a parent classes
 ```
 
-![gokil image](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/43ec93db-09c5-4211-a359-d7beb61300a3)
+![Screenshot 2024-02-22 205715](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/531a1724-5ad4-436c-bc92-7979415724ed)
+
 
 
 
