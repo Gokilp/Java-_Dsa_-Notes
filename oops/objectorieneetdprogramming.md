@@ -308,7 +308,7 @@ public class Main {
 }
 ```
 
-## Memory Allociatiom New Key Word
+## Memory Allociation  New Key Word
 
 - New word also an Objects and stored in Heap Memory
 - Heap mermory Object point to another Reference Variable
@@ -846,3 +846,60 @@ In Hierarchical Inheritance, one class serves as a superclass (base class) for m
 - Hybird Inheritance  is not access java but only use in interfaces
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/8ca136c8-6815-4e33-afbe-b8d7fd836cbe/Untitled.png)
+
+# Ploymorphsim
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/82e9cb7c-827b-4b86-8be6-7a8cb6f7ec35/Untitled.png)
+
+Poly Means  Many
+
+morphism ⇒ ways to respresent
+
+Syntax of ploymorphism
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/07e3b0e3-93fb-4470-8d47-f88fb10ffb05/Untitled.png)
+
+## Types of Polymorphism
+
+- Compile  Time polymorphism
+- Static polymorphism
+
+### Compile time Polymorphism
+
+- Compile  Time polymorphism / Static polymorphism Achived via Method Overloading
+- Same name  methods, Constructor but types Arugmuents,returntypes ordering can be different
+
+Eg: Multiple constructor
+
+```java
+class Helper {
+ 
+    // Method with 2 integer parameters
+    static int Multiply(int a, int b)
+    {
+        // Returns product of integer numbers
+        return a * b;
+    }
+ 
+    // Method 2
+    // With same name but with 2 double parameters
+    static double Multiply(double a, double b)
+    {
+        // Returns product of double numbers
+        return a * b;
+    }
+}
+ 
+// Class 2
+// Main class
+class GFG {
+    // Main driver method
+    public static void main(String[] args)
+    {
+        // Ploymorphsim Calling method by passing
+        
+        System.out.println(Helper.Multiply(2, 4));
+        System.out.println(Helper.Multiply(5.5, 6.3));
+    }
+}
+```
