@@ -948,3 +948,10 @@ parent object = new child();
 // child classes object is created working only
 // Java run a method in referece in child classes only not a parent classes
 ```
+
+![gokil image](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/43ec93db-09c5-4211-a359-d7beb61300a3)
+
+
+
+
+
