@@ -949,10 +949,29 @@ parent object = new child();
 // Java run a method in referece in child classes only not a parent classes
 ```
 
+<<<<<<< Updated upstream
 ![Screenshot 2024-02-22 205715](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/531a1724-5ad4-436c-bc92-7979415724ed)
 
+=======
+![Screenshot 2024-02-22 205715.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/2c42fee2-5f8b-4da4-8f6f-0a7b31f03177/Screenshot_2024-02-22_205715.png)
 
+> > > > > > > Stashed changes
 
+### Final Keyword
 
+- Final Keyword prevent overriding at Runtime .
 
+### Early Binding and Late binding
 
+1. **Early Binding**:
+   - In early binding, the association between a method call and the method implementation is resolved at compile time.
+   - This means that the compiler knows exactly which method will be called and can directly link the method call to its implementation.
+   - Early binding is usually more efficient in terms of performance because the method resolution is done once, during compilation.
+   - However, it lacks flexibility because it requires that the method to be called is known at compile time.
+2. **Late Binding**:
+   - In late binding, also known as dynamic binding or runtime binding, the association between a method call and the method implementation is resolved at runtime.
+   - This means that the decision about which method to call is deferred until the program is actually running.
+   - Late binding allows for greater flexibility because it enables things like polymorphism, where a single method call can behave differently depending on the actual object being referred to.
+   - However, late binding typically incurs a performance overhead because the method resolution needs to be done each time the method is called at runtime.
+
+- Final Key word is always prevent not Overrinding class and Methods. eg inhert the class parent class on final key word not inhert working herit becausce Final keyword not Allow
