@@ -977,3 +977,10 @@ parent object = new child();
 - The final keyword always prevents the overriding of classes and methods. For example, inheriting the parent class with the final keyword will not work because the final keyword does not allow it.
 - Using the static keyword prevents the overriding of values because static does not depend on objects. A static method is referenced using the class name or a reference variable; you cannot access it by calling on objects.
 - Static methods do not depend on objects, so they cannot be overridden based on objects. Therefore, static methods cannot be overridden.
+
+## Encaplusation and Abstraction
+
+- Abstraction solves design-level issues, while Encapsulation addresses implementation issues by hiding the code within a single combined and protected form from the outside world.
+- Abstraction focuses on the external level of implementation, whereas Encapsulation concentrates on the internal level of implementation.
+- Abstraction involves gaining information, while Encapsulation involves containing information at a certain level.
+- Abstraction works with abstract classes and interfaces, whereas Encapsulation handles access modifiers and methods."
