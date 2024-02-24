@@ -974,4 +974,5 @@ parent object = new child();
    - Late binding allows for greater flexibility because it enables things like polymorphism, where a single method call can behave differently depending on the actual object being referred to.
    - However, late binding typically incurs a performance overhead because the method resolution needs to be done each time the method is called at runtime.
 
-- Final Key word is always prevent not Overrinding class and Methods. eg inhert the class parent class on final key word not inhert working herit becausce Final keyword not Allow
+- Final Key word is always prevent not Overrinding class and Methods. eg inhert the class parent class on final key word not inhert working herit becausce Final keyword not Allow.
+- Using static keyword not overriding the values becausce of static not depending on object’s.
