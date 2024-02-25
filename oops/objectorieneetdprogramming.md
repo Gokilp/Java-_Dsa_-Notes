@@ -1045,6 +1045,8 @@ parent object = new child();
 - Using the static keyword prevents the overriding of values because static does not depend on objects. A static method is referenced using the class name or a reference variable; you cannot access it by calling on objects.
 - Static methods do not depend on objects, so they cannot be overridden based on objects. Therefore, static methods cannot be overridden.
 
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/54208fa8-5cc6-4909-9ba1-90a7c785cd15/Untitled.png)
+
 ## Encaplusation and Abstraction
 
 - Abstraction solves design-level issues, while Encapsulation addresses implementation issues by hiding the code within a single combined and protected form from the outside world.
