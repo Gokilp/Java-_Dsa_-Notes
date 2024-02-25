@@ -826,6 +826,44 @@ Visual Represtation
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/337cf01a-1f2c-4cef-b7e7-711758aa51bb/Untitled.png)
 
+```java
+// Java program to illustrate the
+// concept of Multilevel inheritance
+import java.io.*;
+import java.lang.*;
+import java.util.*;
+
+class One {
+	public void print_geek()
+	{
+		System.out.println("Geeks");
+	}
+}
+
+class Two extends One {
+	public void print_for() { System.out.println("for"); }
+}
+
+class Three extends Two {
+	public void print_geek()
+	{
+		System.out.println("Geeks");
+	}
+}
+
+// Drived class
+public class Main {
+	public static void main(String[] args)
+	{
+		Three g = new Three();
+		g.print_geek();
+		g.print_for();
+		g.print_geek();
+	}
+}
+
+```
+
 ### Multiple Inheritance
 
 In Multiple inheritances, one class can have more than one superclass and inherit features from all parent classes. 
@@ -843,6 +881,27 @@ In Hierarchical Inheritance, one class serves as a superclass (base class) for m
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/11d4ba69-c14f-499d-8dfe-c3ee927fdfa2/Untitled.png)
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/27c4b478-4347-46ed-aff2-05f73b356d6a/Untitled.png)
+
+```java
+class Animal{  
+void eat(){System.out.println("eating...");}  
+}  
+class Dog extends Animal{  
+void bark(){System.out.println("barking...");}  
+}  
+class Cat extends Animal{  
+void meow(){System.out.println("meowing...");}  
+}  
+class TestInheritance3{  
+public static void main(String args[]){  
+Cat c=new Cat();  
+c.meow();  
+c.eat();  
+//c.bark();//C.T.Error  
+}}  
+
+// it working in 
+```
 
 ### Hybrid inheritance
 
