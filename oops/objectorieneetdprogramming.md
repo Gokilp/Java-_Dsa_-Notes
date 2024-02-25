@@ -900,7 +900,7 @@ c.eat();
 //c.bark();//C.T.Error  
 }}  
 
-// it working in 
+// it working 
 ```
 
 ### Hybrid inheritance
@@ -914,9 +914,11 @@ c.eat();
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/82e9cb7c-827b-4b86-8be6-7a8cb6f7ec35/Untitled.png)
 
-Poly Means  Many
+> Poly Means  Many
+> 
 
-morphism ⇒ ways to respresent
+> morphism ⇒ ways to respresent
+> 
 
 Syntax of ploymorphism
 
@@ -926,6 +928,8 @@ Syntax of ploymorphism
 
 - Compile  Time polymorphism
 - Static polymorphism
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/b99bc0d7-aa81-4531-a56c-a917e0db142c/Untitled.png)
 
 ### Compile time Polymorphism
 
@@ -995,28 +999,31 @@ class Main {
 	{
 		Parent obj1 = new Parent();
 		obj1.show();
-		Parent obj2 = new Parent ();
-		obj2.show();
+parent object = new child();
+   object.show();
+//refercing varible on parent class but created
+// child classes object is created working only
+// Java run a method in referece in child classes only not a parent classes 
 	}
 }
 
 ```
 
+### Overiding
+
 - "Overriding involves the use of polymorphism, wherein subclasses inherit methods from their base classes. However, a main disadvantage of inheritance arises when a user calls a method with the same name, resulting in the execution of the method from the parent class."
-
-```java
-parent object = new child();
-
-//refercing varible on parent class but created
-// child classes object is created working only
-// Java run a method in referece in child classes only not a parent classes 
-```
+1. **Overriding and Polymorphism**:
+    - Overriding: Subclasses can redefine methods inherited from their parent classes.
+    - Polymorphism: Allows a single method call to behave differently based on the object's type.
+2. **Disadvantage of Inheritance**:
+    - Inheritance: Subclasses inherit properties and behaviors from their parent classes.
+    - Drawback: Method conflicts arise when a method with the same name exists in both the parent and child classes.
+3. **Execution of Parent Class Method**:
+    - When a method is called on a subclass object with the same name as a method in the parent class:
+    - The parent class method is executed instead of the overridden method in the subclass.
+    - This behavior may cause unexpected results, deviating from the intended subclass functionality.
 
 ![Screenshot 2024-02-22 205715.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/2c42fee2-5f8b-4da4-8f6f-0a7b31f03177/Screenshot_2024-02-22_205715.png)
-
-### Final Keyword
-
-- Final Keyword prevent overriding at Runtime .
 
 ### Early Binding and Late binding
 
@@ -1031,6 +1038,9 @@ parent object = new child();
     - Late binding allows for greater flexibility because it enables things like polymorphism, where a single method call can behave differently depending on the actual object being referred to.
     - However, late binding typically incurs a performance overhead because the method resolution needs to be done each time the method is called at runtime.
 
+### Final Keyword
+
+- Final Keyword prevent overriding at Runtime .
 - The final keyword always prevents the overriding of classes and methods. For example, inheriting the parent class with the final keyword will not work because the final keyword does not allow it.
 - Using the static keyword prevents the overriding of values because static does not depend on objects. A static method is referenced using the class name or a reference variable; you cannot access it by calling on objects.
 - Static methods do not depend on objects, so they cannot be overridden based on objects. Therefore, static methods cannot be overridden.
