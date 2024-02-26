@@ -1,3 +1,5 @@
+# OOPS
+
 # Classes
 
 - class is like a blue print
@@ -1075,3 +1077,11 @@ proctected is access classes,packages, Sub class Package in same pkg, Sub class 
 - "Protected" access modifier allows access within the class, its package, and subclasses (inheritance), but not outside of the package or class hierarchy.
 - "Protected" is primarily used for inheriting classes in subclasses, where subclasses must only access variable data.
 - "Public" allows access from anywhere and everywhere.
+- In protected Only you access inherit the Subclasses Not know the parent classes
+- Simple protected access only Subclasses only.
+
+![1000020284.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/f2571e4e-2e55-46c9-8579-a4ae25a3d0d5/1000020284.jpg)
+
+- Protected Key word also refers to the base classes
+
+## Common Packages
