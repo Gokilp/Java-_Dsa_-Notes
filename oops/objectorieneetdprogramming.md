@@ -1085,3 +1085,10 @@ proctected is access classes,packages, Sub class Package in same pkg, Sub class 
 - Protected Key word also refers to the base classes
 
 ## Common Packages
+
+- lang: Language - Java programming language core package containing fundamental classes and interfaces.
+- io: Input/Output - Java package for input and output operations, including file handling.
+- util: Utility - Java package containing various utility classes and data structures.
+- applet: Applicationlet - A small application program that runs within a larger application or web browser.
+- awt: Abstract Window Toolkit - Java package for creating graphical user interfaces (GUIs).
+- net: Network - Java package for networking functionality, including client-server communicati
