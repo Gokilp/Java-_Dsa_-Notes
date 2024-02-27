@@ -1,5 +1,3 @@
-# OOPS
-
 # Classes
 
 - class is like a blue print
@@ -1057,13 +1055,13 @@ parent object = new child();
 
 ## Access Modifier’s
 
-defalut package not Access out side the packages.
+default package not Access out side the packages.
 
 public package is Access in every Where
 
-private package only acccess inside the class and methods
+private package only access inside the class and methods
 
-proctected is access classes,packages, Sub class Package in same pkg, Sub class Package in different package
+protected is access classes, packages, Sub class Package in same pkg, Sub class Package in different package
 
 ### Rules for Access Modifier’s
 
@@ -1089,7 +1087,7 @@ proctected is access classes,packages, Sub class Package in same pkg, Sub class 
 - lang: Language - Java programming language core package containing fundamental classes and interfaces.
 - io: Input/Output - Java package for input and output operations, including file handling.
 - util: Utility - Java package containing various utility classes and data structures.
-- applet: Applicationlet - A small application program that runs within a larger application or web browser.
+- applet: Application let - A small application program that runs within a larger application or web browser.
 - awt: Abstract Window Toolkit - Java package for creating graphical user interfaces (GUIs).
 - net: Network - Java package for networking functionality, including client-server communicati
 
@@ -1099,3 +1097,104 @@ proctected is access classes,packages, Sub class Package in same pkg, Sub class 
 - The Object class is beneficial if you want to refer any object whose type you don't know. Notice that parent class reference variable can refer the child class object, know as upcasting.
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/71165023-7929-4556-9b4b-73166a630765/Untitled.png)
+
+## Object class Methods
+
+- tostring() method
+- hashCode() method
+- equals(Object obj) method
+- finalize() method
+- getClass() method
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/370b8a7c-f27b-46b8-96c6-b6433fb9ac7c/Untitled.png)
+
+### **1. `toString()`**
+
+**Definition:**
+The **`toString()`** method is a method in Java that returns a string representation of an object. This method is automatically called when you try to concatenate an object with a string or when you try to print an object using **`System.out.println()`**.
+
+**Example:**
+
+```java
+javaCopy code
+class Car {
+    String brand;
+    int year;
+
+    public Car(String brand, int year) {
+        this.brand = brand;
+        this.year = year;
+    }
+
+    public String toString() {
+        return "Car{" +
+                "brand='" + brand + '\'' +
+                ", year=" + year +
+                '}';
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Car myCar = new Car("Toyota", 2020);
+        System.out.println(myCar); // Output: Car{brand='Toyota', year=2020}
+    }
+}
+
+```
+
+### **2. `hashCode()`**
+
+**Definition:**
+The **`hashCode()`** method in Java returns a hash code value for the object. This method is used by hash-based data structures such as HashMap, HashSet, etc.
+
+**Example:**
+
+```java
+javaCopy code
+public class Main {
+    public static void main(String[] args) {
+        String str = "Hello";
+        int hashCode = str.hashCode();
+        System.out.println("Hash code for 'Hello': " + hashCode);
+    }
+}
+
+```
+
+### **3. `equals(Object obj)`**
+
+**Definition:**
+The **`equals(Object obj)`** method is used to compare two objects for equality. The default implementation of this method in the Object class compares memory addresses, but it is often overridden in user-defined classes to compare object contents.
+
+**Example:**
+
+```java
+javaCopy code
+class Student {
+    String name;
+    int id;
+
+    public Student(String name, int id) {
+        this.name = name;
+        this.id = id;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Student student = (Student) obj;
+        return id == student.id &&
+                Objects.equals(name, student.name);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Student s1 = new Student("Alice", 123);
+        Student s2 = new Student("Alice", 123);
+        System.out.println(s1.equals(s2)); // Output: true
+    }
+}
+
+```
