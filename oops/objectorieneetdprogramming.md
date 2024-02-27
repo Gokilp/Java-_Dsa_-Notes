@@ -1092,3 +1092,10 @@ proctected is access classes,packages, Sub class Package in same pkg, Sub class 
 - applet: Applicationlet - A small application program that runs within a larger application or web browser.
 - awt: Abstract Window Toolkit - Java package for creating graphical user interfaces (GUIs).
 - net: Network - Java package for networking functionality, including client-server communicati
+
+### Object classes
+
+- The **Object class** is the parent class of all the classes in java by default. In other words, it is the topmost class of java.
+- The Object class is beneficial if you want to refer any object whose type you don't know. Notice that parent class reference variable can refer the child class object, know as upcasting.
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/71165023-7929-4556-9b4b-73166a630765/Untitled.png)
