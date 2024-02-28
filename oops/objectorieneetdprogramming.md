@@ -1199,14 +1199,81 @@ public class Main {
 
 ```
 
+### **4. `finalize()`**
+
+**Definition:**
+The **`finalize()`** method is called by the garbage collector before reclaiming memory occupied by an object. It is a method that can be overridden to provide cleanup code for an object before it is garbage collected.
+
+**Example:** This method is rarely used explicitly.
+
+### **5. `getClass()`**
+
+**Definition:**
+The **`getClass()`** method returns the runtime class of an object. It is a final method in the Object class, so it is available to all Java objects.
+
+**Example:**
+
+```java
+ public class Main {
+    public static void main(String[] args) {
+        String str = "Hello";
+        Class<?> cls = str.getClass();
+        System.out.println("Class of 'Hello': " + cls.getName());
+    }
+```
+
 ### Abstract Classes
 
 Data **abstraction** is the process of hiding certain details and showing only essential information to the user.
 
-Abstraction can be achieved with either **abstract classes** or **[interfaces](https://www.w3schools.com/java/java_interface.asp)** (which you will learn more about in the next chapter).
+Abstraction can be achieved with either **abstract classes** or interfaces
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/c9bd013f-e92f-4739-afb9-b9894b2810e8/Untitled.png)
+
+- Inheritance conflicts inherit the same Function Name sloving the conflict using Abstract classes
+- Overriding sloving the conflicts
 
 The `abstract` keyword is a non-access modifier, used for classes and methods:
 
 - **Abstract class:** is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
 - **Abstract method:** can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from).
 - when you declare an abstract method inside an abstract class, you should include the name add keyword abstract class name.
+- Abstract class can’t create a object and Abstract class is created in super classes /Parent classes no Body
+- Abstract class you can inherit the parent class
+- Abstract class you Overiding in using child class object
+
+```java
+abstract class Animal {
+    abstract void makeSound(); // Abstract method
+}
+
+```
+
+```java
+abstract class Animal {
+    abstract void makeSound();   //Abstract classes no body
+}
+
+class Dog extends Animal {
+    void makeSound() {                // Abstarct class only use inherit parent class
+        System.out.println("Bark");   // Dog is overriding
+    }
+}
+
+class Cat extends Animal {
+    void makeSound() {                  //Abstarct class only use inherit parent class
+        System.out.println("Meow");     // cat is overiding
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal dog = new Dog();
+        Animal cat = new Cat();          // only created a Object child classes and
+
+        dog.makeSound();
+        cat.makeSound();
+    }
+}
+
+```
