@@ -1277,3 +1277,15 @@ public class Main {
 }
 
 ```
+
+## Abstract class constructor
+
+Abstract class constructor does created because of Abstract classes does not create a object , so Abstract classes no body no instance variable and methods
+
+## Abstract class Object
+
+Abstract class Object does created because of Abstract classes does not create a object , so Abstract classes no body no instance variable and methods
+
+## Static Method
+
+Static method using in Abstract classes becausce Abstract classes static method not depending on Object
