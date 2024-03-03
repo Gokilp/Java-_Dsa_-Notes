@@ -3,6 +3,8 @@
 - class is like a blue print
 - classes Named group of properities and function
 - classes is used combined properties and Methods
+- classes and object are important
+- object oriented programming oriented Pillars are Encaplusation,inheritance,Abstraction,Ploymorphism
 
 ## Why need Class
 
