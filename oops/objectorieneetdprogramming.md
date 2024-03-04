@@ -3,11 +3,11 @@
 - class is like a blue print
 - classes Named group of properities and function
 - classes is used combined properties and Methods
-- classes and object are important
-- object oriented programming oriented Pillars are Encaplusation,inheritance,Abstraction,Ploymorphism
-
-Inheritance => Iherit the value form one class to another classes
-Ploymorphism => sloving the problem of Inheritance and polymorphism work for constructor value.ploymorphism,are Operator overloading, Function overloading, Overriding
+- classes and object are important object oriented programming oriented Pillars are Encaplusation, inheritance, Abstraction, Ploymorphism
+- Inheritance => Inherit the value form one class to another classes
+- Polymorphism => solving the problem of Inheritance and polymorphism work for constructor value.ploymorphism,are Operator overloading, Function overloading, Overriding
+- Abstraction focuses on the external level of implementation, whereas Encapsulation concentrates on the internal level of implementation.
+- Abstraction involves gaining information, while Encapsulation involves containing information at a certain level.
 
 ## Why need Class
 
@@ -1274,7 +1274,7 @@ class Cat extends Animal {
 public class Main {
     public static void main(String[] args) {
         Animal dog = new Dog();
-        Animal cat = new Cat();          // only created a Object child classes
+        Animal cat = new Cat();          // only created a Object child classes and
 
         dog.makeSound();
         cat.makeSound();
