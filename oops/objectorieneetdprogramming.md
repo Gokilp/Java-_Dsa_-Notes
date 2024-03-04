@@ -6,6 +6,9 @@
 - classes and object are important
 - object oriented programming oriented Pillars are Encaplusation,inheritance,Abstraction,Ploymorphism
 
+Inheritance => Iherit the value form one class to another classes
+Ploymorphism => sloving the problem of Inheritance and polymorphism work for constructor value.ploymorphism,are Operator overloading, Function overloading, Overriding
+
 ## Why need Class
 
 Consider a scenario where we need to manage information about students, such as their roll numbers and names. Initially, we might resort to separate arrays for each piece of data:
