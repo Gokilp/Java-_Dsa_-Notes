@@ -1300,3 +1300,5 @@ Static method using in Abstract classes because Abstract classes static method n
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/8d029115-7a2e-425c-86a7-152f06f01a2f/Untitled.png)
 
 Interface sloving Multiple inheritance problems
+
+- Interface is sloving problems in Mulitiple inheritance
