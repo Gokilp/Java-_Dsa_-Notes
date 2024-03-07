@@ -3,7 +3,7 @@
 - class is like a blue print
 - classes Named group of properities and function
 - classes is used combined properties and Methods
-- classes and object are important object oriented programming oriented Pillars are Encaplusation, inheritance, Abstraction, Ploymorphism
+- classes and object are important    object oriented programming oriented Pillars are Encaplusation, inheritance, Abstraction, Ploymorphism
 - Inheritance => Inherit the value form one class to another classes
 - Polymorphism => solving the problem of Inheritance and polymorphism work for constructor value.ploymorphism,are Operator overloading, Function overloading, Overriding
 - Abstraction focuses on the external level of implementation, whereas Encapsulation concentrates on the internal level of implementation.
@@ -28,12 +28,13 @@ While this approach works, it can quickly become unwieldy as the program grows. 
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/0fbdd402-181f-4c8b-a0a8-2ce137ea7e46/Untitled.png)
 
-- Classes is created a own purpose contains own **Methods and properties.**
+- Classes is created a own purpose contains own **Methods and  properties.**
 - Class is a template of an Object
 - Object is an instance of classes
 
-> Classes ⇒ Logical Value // Not Occpuing Space in Memory
-> object ⇒ physical object // Occuping space in memory
+> Classes ⇒ Logical Value  // Not Occpuing Space in Memory 
+object ⇒ physical object   // Occuping  space in memory
+> 
 
 ## Objects
 
@@ -42,20 +43,20 @@ While this approach works, it can quickly become unwieldy as the program grows. 
 - Instance Variable is Object inside the properties
 - It is useful to think of an object’s identity as the place where its value is stored in memory.
 - The behavior of an object is the effect of data-type operations.
-- The dot operator links the name of the object with the name of an instance variable. Although commonly referred to as the dot operator, the formal specification for Java categorizes the . as a separator.
+- The dot operator links the name of the object with the name of an instance variable.   Although commonly referred to as the dot operator, the formal specification for Java categorizes the . as a separator.
 
-## Class and Object declare
+## Class and Object  declare
 
 ### Declaring a Class
 
 ```java
-// create a class
+// create a class 
 
 Class Student {
 
 int rno;   //rno;
-int marks; //Marks
-String name;  // Name
+int marks; //Marks 
+String name;  // Name 
 
 ```
 
@@ -67,7 +68,7 @@ Student student1 = new Student();
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/188bddfe-d188-40b1-b14c-e9137cea5eb1/Untitled.png)
 
-- New Word is create a Dynamically allocate memory & Return a reference to it
+- New Word  is create a Dynamically allocate memory & Return  a reference to it
 
 ## Runtime and compile Time
 
@@ -81,7 +82,7 @@ Student student1 = new Student();
 ### Run Time
 
 - During runtime, variables are allocated memory, objects are created, and functions/methods are executed based on the flow of the program.
-- Java programming Dynamically create object in Run time.
+- Java programming  Dynamically create object in Run time.
 
 ### Manuplate the object and classes
 
@@ -96,7 +97,7 @@ public class Oops{
       }
       public static void main(String[] args) {
           Student student1 = new Student();
-
+         
           System.out.println(student1.rno);
           System.out.println(student1.marks);
           System.out.println(student1.name);
@@ -106,7 +107,7 @@ public class Oops{
 
 # Constructor
 
-- Constructor is special type of function But Run you create a object and allows the same
+- Constructor is special type of function But Run you create a object and allows the  same
 
       data type   variables
 
@@ -147,15 +148,15 @@ public class Oops{
         int rno;
         float   marks;
         String name;
-
+      
         Student () {
         // Default values
-        this.rno = 10;        // this word reference pointing the current Object
-        this.marks = 20.0f;
+        this.rno = 10;        // this word reference pointing the current Object 
+        this.marks = 20.0f;  
         this.name = "gokil";
         }
 
-
+        
     }
 
       public static void main(String[] args) {
@@ -171,7 +172,7 @@ public class Oops{
 ### constructor Value modified
 
 - Constructor only modified passing arugments
-- Constructor using Modified Every Object Values using the parameters /Arugments values
+- Constructor using Modified Every Object Values  using the parameters /Arugments values
 
 ```java
 public class Oops {
@@ -216,14 +217,14 @@ public class Oops {
         int rno;
         float marks;
         String name;
-
-    Student() {   //  constructor consider calling the size of Arguments
+    
+    Student() {   //  constructor consider calling the size of Arguments 
 
         this.rno=10;
         this.marks=20.0f;
         this.name="gokil";
     }
-    Student(int rollno,float marks,String Name) // constructor consider  calling the size of Arguments
+    Student(int rollno,float marks,String Name) // constructor consider  calling the size of Arguments 
     {
         this.rno=rollno;
         this.marks=marks;
@@ -232,13 +233,13 @@ public class Oops {
 }
     public static void main(String[] args) {
          Student gokil = new Student(20,10.0f,"Rahul");
-
+    
         Student Rahul = new Student();
         System.out.println(Rahul.marks);
 
     }
 
-
+   
 }
 ```
 
@@ -246,18 +247,17 @@ public class Oops {
 
 - call one constructor from another constructor in the same class using the **`this()`** keyword.
 - This is useful when you have multiple constructors in a class and want to avoid code duplication by reusing common initialization logic.
-
 1. **`this()` Keyword**:
-   - Use **`this()`** to call another constructor from within a constructor.
-   - It must be the first statement in the constructor.
+    - Use **`this()`** to call another constructor from within a constructor.
+    - It must be the first statement in the constructor.
 2. **Avoiding Redundancy**:
-   - Helps in avoiding repetition of initialization logic.
-   - Centralizes common initialization steps.
+    - Helps in avoiding repetition of initialization logic.
+    - Centralizes common initialization steps.
 3. **Parameter Passing**:
-   - Arguments can be passed to the constructor being called using **`this()`**.
-   - Ensure argument types match the parameter list of the target constructor.
+    - Arguments can be passed to the constructor being called using **`this()`**.
+    - Ensure argument types match the parameter list of the target constructor.
 4. **Code Readability**:
-   - Enhances code readability by providing a clear flow of initialization logic.
+    - Enhances code readability by providing a clear flow of initialization logic.
 
 ```java
 public class Oops{
@@ -296,7 +296,7 @@ public class Oops{
 ```java
 class Person {
     String name;
-
+    
     // Copy constructor
     public Person(Person other) {
         this.name = other.name;
@@ -307,17 +307,17 @@ public class Main {
     public static void main(String[] args) {
         Person person1 = new Person();
         person1.name = "John";
-
+        
         // Using the copy constructor to create a new object
         Person person2 = new Person(person1);
-
+        
         System.out.println("Person 1: " + person1.name);
         System.out.println("Person 2: " + person2.name);
     }
 }
 ```
 
-## Memory Allociation New Key Word
+## Memory Allociation  New Key Word
 
 - New word also an Objects and stored in Heap Memory
 - Heap mermory Object point to another Reference Variable
@@ -332,19 +332,19 @@ public class Main {
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/49671ea6-0b35-4b14-8305-d28013a2f88c/Untitled.png)
 
-- Wrapper classes contains internal side
+- Wrapper classes contains  internal side
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/85bea851-6fd2-4647-8204-f2280261fd68/Untitled.png)
 
-### Arritubutes of Wrapper Classes
+### Arritubutes of  Wrapper  Classes
 
 ```java
 
-Integer i = Integer.valueOf(value); // Boxing, Wrapping
+Integer i = Integer.valueOf(value); // Boxing, Wrapping 
 
 int j = i.int Value(i) // unboxing
 
-Integer i3 = 30; // auto boxing
+Integer i3 = 30; // auto boxing 
 int k = i2;
 
 int i = Integer.parseInt(varible);
@@ -352,15 +352,15 @@ int i = Integer.parseInt(varible);
 
 ## Final Key word
 
-- When a non primitive is final, you cannot reassign cannot the value.
-- primitive data type final key word you can’t Modified.
+- When a non primitive is  final, you cannot reassign cannot  the value.
+- primitive data type final key word you can’t  Modified.
 - The **`final`** keyword in Java is used to declare constants, immutable variables, and prevent method overriding or subclassing.
 - It makes variables unmodifiable after initialization, methods unoverridable, and classes unextendable. It ensures code robustness, improves performance, and clarifies intent by signaling immutability or constant values.
 
 ### Garbage Collections
 
 - If there is an object without reference variable then object will be
-  destroyed by “Garbage Collection
+destroyed by “Garbage Collection
 
 # Java Packages & API
 
@@ -389,7 +389,7 @@ To create a package, use the `package` keyword:
 
 # Static Keyword
 
-Static method using an referencing without object
+Static method using an referencing without object  
 
 **Static Variables**: Variables that belong to the class itself, rather than any specific instance of the class. They are shared among all instances of the class.
 
@@ -408,7 +408,7 @@ public class Human {
     String name;
     int salary;
     boolean married;
-    static long population;  // static not referncing an objects
+    static long population;  // static not referncing an objects 
 
     static void message() {
         System.out.println("Hello world");
@@ -420,7 +420,7 @@ public class Human {
         this.name = name;
         this.salary = salary;
         this.married = married;
-        Human.population += 1; // class name give the static Methods calling
+        Human.population += 1; // class name give the static Methods calling 
     }
 }
 ```
@@ -638,16 +638,16 @@ public class Main {
 
 - Inheritance is an important pillar of OOP(Object-Oriented Programming). It is the mechanism in Java by which one class is allowed to inherit the features(fields and methods) of another class
 - Java, Inheritance means creating new classes based on existing ones. A class that inherits from another class can reuse the methods and fields of that class. In addition.
-- In heritance is base classes inherit to derived class you can also create a new properties on derived classes and also used existing base class properties .
+- In heritance is base  classes inherit   to derived class you can also create a new properties on derived classes   and  also used existing base class  properties .
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/813a2fea-0a38-4dc1-bb07-d24b7909f536/Untitled.png)
 
 ## Syntax
 
 ```java
-class derived-class extends base-class
-{
-   //methods and fields
+class derived-class extends base-class  
+{  
+   //methods and fields  
 }
 ```
 
@@ -655,26 +655,26 @@ class derived-class extends base-class
 public class Oops{
 
   static class Department{
-
+  
    String college;
    String  Department;
    int student_ls;
    int Staff_ls;
-
+   
    Department()
    {
       college =" IIT Madras";
       Department = "Computer Science";
       Staff_ls=20;
-      student_ls=100;
+      student_ls=100; 
    }
 }
   public static class Student extends Department{
-
+   
    String Mentor_name;
    int  student_rollno;
    int semster;
-
+   
    Student()
    {
       Mentor_name="ram";
@@ -713,15 +713,15 @@ public class Oops{
         // this also means, that the ones you are trying to access should be initialised
         // but here, when the obj itself is of type parent class, how will you call the constructor of child class
         // this is why error
-        BoxWeight box6 = new Box(2, 3, 4);
-        System.out.println(box6);  // you can  inherit base  class to deviered class
+        BoxWeight box6 = new Box(2, 3, 4); 
+        System.out.println(box6);  // you can  inherit base  class to deviered class 
                                      // constructor automatically deside class file
 
 ```
 
 ## Super class
 
-- Super is reference to the parent class constructor .
+- Super is reference to the  parent class constructor .
 - Super classes is always reference to the parent constructors
 - **`this`** keyword: Refers to the current instance of the class, used to access instance variables or methods of the current object.
 - **`super`** keyword: Refers to the parent class, used to call the parent class's constructor or methods from the subclass.
@@ -732,30 +732,30 @@ The **`super`** keyword can be used to access methods and variables of the super
 
 ```java
 
-class Vehicle {
-	int maxSpeed = 120;
-}
+class Vehicle { 
+	int maxSpeed = 120; 
+} 
 
-// sub class Car extending vehicle
-class Car extends Vehicle {
-	int maxSpeed = 180;
+// sub class Car extending vehicle 
+class Car extends Vehicle { 
+	int maxSpeed = 180; 
 
-	void display()
-	{
-
+	void display() 
+	{ 
+		
 		System.out.println("Maximum Speed: "
-						+ super.maxSpeed); // calling constructor on parent class
+						+ super.maxSpeed); // calling constructor on parent class 
                                // print value maxspeed is 120
-	}
-}
+	} 
+} 
 
-// Driver Program
-class Test {
-	public static void main(String[] args)
-	{
-		Car small = new Car();
-		small.display();
-	}
+// Driver Program 
+class Test { 
+	public static void main(String[] args) 
+	{ 
+		Car small = new Car(); 
+		small.display(); 
+	} 
 }
 
 ```
@@ -786,7 +786,7 @@ public class Main {
     }
 }
 
-Output code
+Output code 
 
 Superclass constructor
 Subclass constructor
@@ -803,18 +803,18 @@ Subclass constructor
 
 ### Single Inheritance
 
-Single Inheritance is one classes extends from another classes
+Single Inheritance is one classes extends from another classes 
 
-In the oops concept create object dervied classes to base classes
+In the oops concept create object dervied classes to base classes 
 
 Example
 
 ![1000020284.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/f2571e4e-2e55-46c9-8579-a4ae25a3d0d5/1000020284.jpg)
 
 ```java
-class derived-class extends base-class
-{
-   //methods and fields
+class derived-class extends base-class  
+{  
+   //methods and fields  
 }
 ```
 
@@ -871,9 +871,9 @@ public class Main {
 
 ### Multiple Inheritance
 
-In Multiple inheritances, one class can have more than one superclass and inherit features from all parent classes.
+In Multiple inheritances, one class can have more than one superclass and inherit features from all parent classes. 
 
-Java does not support multiple inheritances with classes. In Java, we can achieve multiple inheritances only through Interfaces. In the image below, Class C is derived from interfaces A and B.
+ Java does not support multiple inheritances with classes. In Java, we can achieve multiple inheritances only through Interfaces. In the image below, Class C is derived from interfaces A and B.
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/eea07492-fcb9-477d-af8c-fa949edd6b21/Untitled.png)
 
@@ -888,30 +888,30 @@ In Hierarchical Inheritance, one class serves as a superclass (base class) for m
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/27c4b478-4347-46ed-aff2-05f73b356d6a/Untitled.png)
 
 ```java
-class Animal{
-void eat(){System.out.println("eating...");}
-}
-class Dog extends Animal{
-void bark(){System.out.println("barking...");}
-}
-class Cat extends Animal{
-void meow(){System.out.println("meowing...");}
-}
-class TestInheritance3{
-public static void main(String args[]){
-Cat c=new Cat();
-c.meow();
-c.eat();
-//c.bark();//C.T.Error
-}}
+class Animal{  
+void eat(){System.out.println("eating...");}  
+}  
+class Dog extends Animal{  
+void bark(){System.out.println("barking...");}  
+}  
+class Cat extends Animal{  
+void meow(){System.out.println("meowing...");}  
+}  
+class TestInheritance3{  
+public static void main(String args[]){  
+Cat c=new Cat();  
+c.meow();  
+c.eat();  
+//c.bark();//C.T.Error  
+}}  
 
-// it working
+// it working 
 ```
 
 ### Hybrid inheritance
 
 - Hybird Inheritance combination of single and Multiple inheritance
-- Hybird Inheritance is not access java but only use in interfaces
+- Hybird Inheritance  is not access java but only use in interfaces
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/8ca136c8-6815-4e33-afbe-b8d7fd836cbe/Untitled.png)
 
@@ -919,9 +919,11 @@ c.eat();
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/82e9cb7c-827b-4b86-8be6-7a8cb6f7ec35/Untitled.png)
 
-> Poly Means Many
+> Poly Means  Many
+> 
 
 > morphism ⇒ ways to respresent
+> 
 
 Syntax of ploymorphism
 
@@ -929,28 +931,26 @@ Syntax of ploymorphism
 
 ## Types of Polymorphism
 
-- Compile Time polymorphism
+- Compile  Time polymorphism
 - Static polymorphism
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/b99bc0d7-aa81-4531-a56c-a917e0db142c/Untitled.png)
 
 ### Compile time Polymorphism
 
-- Compile Time polymorphism / Static polymorphism Achived via Method Overloading
-- Same name methods, Constructor but types Arugmuents,returntypes ordering can be different
+- Compile  Time polymorphism / Static polymorphism Achived via Method Overloading
+- Same name  methods, Constructor but types Arugmuents,returntypes ordering can be different
 
 Eg: Multiple constructor
 
 ```java
 class Helper {
-
+ 
     // Method with 2 integer parameters
     static int Multiply(int a, int b)
     {
         // Returns product of integer numbers
         return a * b;
     }
-
+ 
     // Method 2
     // With same name but with 2 double parameters
     static double Multiply(double a, double b)
@@ -959,7 +959,7 @@ class Helper {
         return a * b;
     }
 }
-
+ 
 // Class 2
 // Main class
 class GFG {
@@ -967,7 +967,7 @@ class GFG {
     public static void main(String[] args)
     {
         // Ploymorphsim Calling method by passing
-
+        
         System.out.println(Helper.Multiply(2, 4));
         System.out.println(Helper.Multiply(5.5, 6.3));
     }
@@ -976,12 +976,12 @@ class GFG {
 
 ## Dynamic polymorphism
 
-Dynamic polymorphism or Runtime Polymorphism
+Dynamic polymorphism or Runtime Polymorphism 
 
 ```java
 
 // Base Class
-class Parent {
+class Parent { 
 	void show() //same method name with  one to access the variable
 
 { System.out.println("Parent's show()"); }
@@ -989,7 +989,7 @@ class Parent {
 
 // Inherited class
 class Child extends Parent {
-
+	
  void show()   //same method name with  one to access the variable
 	{
 		System.out.println("Child's show()");
@@ -1006,7 +1006,7 @@ parent object = new child();
    object.show();
 //refercing varible on parent class but created
 // child classes object is created working only
-// Java run a method in referece in child classes only not a parent classes
+// Java run a method in referece in child classes only not a parent classes 
 	}
 }
 
@@ -1015,32 +1015,31 @@ parent object = new child();
 ### Overiding
 
 - "Overriding involves the use of polymorphism, wherein subclasses inherit methods from their base classes. However, a main disadvantage of inheritance arises when a user calls a method with the same name, resulting in the execution of the method from the parent class."
-
 1. **Overriding and Polymorphism**:
-   - Overriding: Subclasses can redefine methods inherited from their parent classes.
-   - Polymorphism: Allows a single method call to behave differently based on the object's type.
+    - Overriding: Subclasses can redefine methods inherited from their parent classes.
+    - Polymorphism: Allows a single method call to behave differently based on the object's type.
 2. **Disadvantage of Inheritance**:
-   - Inheritance: Subclasses inherit properties and behaviors from their parent classes.
-   - Drawback: Method conflicts arise when a method with the same name exists in both the parent and child classes.
+    - Inheritance: Subclasses inherit properties and behaviors from their parent classes.
+    - Drawback: Method conflicts arise when a method with the same name exists in both the parent and child classes.
 3. **Execution of Parent Class Method**:
-   - When a method is called on a subclass object with the same name as a method in the parent class:
-   - The parent class method is executed instead of the overridden method in the subclass.
-   - This behavior may cause unexpected results, deviating from the intended subclass functionality.
+    - When a method is called on a subclass object with the same name as a method in the parent class:
+    - The parent class method is executed instead of the overridden method in the subclass.
+    - This behavior may cause unexpected results, deviating from the intended subclass functionality.
 
 ![Screenshot 2024-02-22 205715.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/2c42fee2-5f8b-4da4-8f6f-0a7b31f03177/Screenshot_2024-02-22_205715.png)
 
 ### Early Binding and Late binding
 
 1. **Early Binding**:
-   - In early binding, the association between a method call and the method implementation is resolved at compile time.
-   - This means that the compiler knows exactly which method will be called and can directly link the method call to its implementation.
-   - Early binding is usually more efficient in terms of performance because the method resolution is done once, during compilation.
-   - However, it lacks flexibility because it requires that the method to be called is known at compile time.
+    - In early binding, the association between a method call and the method implementation is resolved at compile time.
+    - This means that the compiler knows exactly which method will be called and can directly link the method call to its implementation.
+    - Early binding is usually more efficient in terms of performance because the method resolution is done once, during compilation.
+    - However, it lacks flexibility because it requires that the method to be called is known at compile time.
 2. **Late Binding**:
-   - In late binding, also known as dynamic binding or runtime binding, the association between a method call and the method implementation is resolved at runtime.
-   - This means that the decision about which method to call is deferred until the program is actually running.
-   - Late binding allows for greater flexibility because it enables things like polymorphism, where a single method call can behave differently depending on the actual object being referred to.
-   - However, late binding typically incurs a performance overhead because the method resolution needs to be done each time the method is called at runtime.
+    - In late binding, also known as dynamic binding or runtime binding, the association between a method call and the method implementation is resolved at runtime.
+    - This means that the decision about which method to call is deferred until the program is actually running.
+    - Late binding allows for greater flexibility because it enables things like polymorphism, where a single method call can behave differently depending on the actual object being referred to.
+    - However, late binding typically incurs a performance overhead because the method resolution needs to be done each time the method is called at runtime.
 
 ### Final Keyword
 
@@ -1062,11 +1061,11 @@ parent object = new child();
 
 default package not Access out side the packages.
 
-public package is Access in every Where
+public package is Access in every Where 
 
-private package only access inside the class and methods
+private package only   access inside the class and methods
 
-protected is access classes, packages, Sub class Package in same pkg, Sub class Package in different package
+protected is access classes, packages, Sub class  Package in same pkg,  Sub class  Package in different package 
 
 ### Rules for Access Modifier’s
 
@@ -1081,7 +1080,7 @@ protected is access classes, packages, Sub class Package in same pkg, Sub class 
 - "Protected" is primarily used for inheriting classes in subclasses, where subclasses must only access variable data.
 - "Public" allows access from anywhere and everywhere.
 - In protected Only you access inherit the Subclasses Not know the parent classes
-- Simple protected access only Subclasses only.
+- Simple protected  access only Subclasses only.
 
 ![1000020284.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/f2571e4e-2e55-46c9-8579-a4ae25a3d0d5/1000020284.jpg)
 
@@ -1231,7 +1230,7 @@ The **`getClass()`** method returns the runtime class of an object. It is a fina
 
 Data **abstraction** is the process of hiding certain details and showing only essential information to the user.
 
-Abstraction can be achieved with either **abstract classes** or interfaces
+Abstraction can be achieved with either **abstract classes** or interfaces 
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/c9bd013f-e92f-4739-afb9-b9894b2810e8/Untitled.png)
 
@@ -1243,7 +1242,7 @@ The `abstract` keyword is a non-access modifier, used for classes and methods:
 - **Abstract class:** is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
 - **Abstract method:** can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from).
 - when you declare an abstract method inside an abstract class, you should include the name add keyword abstract class name.
-- Abstract class can’t create a object and Abstract class is created in super classes /Parent classes no Body
+- Abstract class can’t create a  object and  Abstract class is created in super classes /Parent classes no Body
 - Abstract class you can inherit the parent class
 - In a method, abstract classes are used, and there may also be abstract classes used within other classes.
 - Abstract class you Overiding in using child class object
@@ -1257,25 +1256,25 @@ abstract class Animal {
 
 ```java
 abstract class Animal {
-    abstract void makeSound();   //Abstract classes no body
+    abstract void makeSound();   //Abstract classes no body 
 }
 
 class Dog extends Animal {
     void makeSound() {                // Abstarct class only use inherit parent class
-        System.out.println("Bark");   // Dog is overriding
+        System.out.println("Bark");   // Dog is overriding 
     }
 }
 
 class Cat extends Animal {
     void makeSound() {                  //Abstarct class only use inherit parent class
-        System.out.println("Meow");     // cat is overiding
+        System.out.println("Meow");     // cat is overiding 
     }
 }
 
 public class Main {
     public static void main(String[] args) {
-        Animal dog = new Dog();
-        Animal cat = new Cat();          // only created a Object child classes and
+        Animal dog = new Dog();         
+        Animal cat = new Cat();          // only created a Object child classes and 
 
         dog.makeSound();
         cat.makeSound();
@@ -1284,17 +1283,112 @@ public class Main {
 
 ```
 
+```java
+public class main{
+
+ static abstract class parent{
+
+   abstract void carrer();
+   abstract void age();
+ }
+
+  static public class Son extends parent{
+
+    public void carrer(){
+       System.out.println("computer Science");
+    }
+    public void age(){
+       System.out.println("Age is 25");
+    }
+  }
+
+  static public class Daughter extends parent{
+
+   public void carrer(){
+      System.out.println("Doctor");
+   }
+   public void age(){
+       System.out.println("Age is 20");
+   }
+
+  }
+
+  public static void main(String[] args) {
+     
+   Son son = new Son();
+
+     son.carrer();
+     son.age();
+   
+   Daughter daughter = new Daughter();
+     daughter.carrer();
+     daughter.age();
+   }
+
+}
+```
+
 ## Abstract class constructor
 
-Abstract class constructor does created because of Abstract classes does not create a object , so Abstract classes no body no instance variable and methods
+Abstract class constructor does created because of Abstract classes  does not create   a object , so Abstract classes no body no instance variable and methods 
+
+```java
+public class main{
+
+ static abstract class parent{
+    int age;
+   abstract void carrer();
+   abstract void age();
+ }
+
+  static public class Son extends parent{
+    
+    public  Son(int age)
+    {
+       this.age = age;
+    }
+    public void carrer(){
+       System.out.println("computer Science");
+    }
+    public void age(){
+       System.out.println("Age is "+age);
+    }
+  }
+
+  static public class Daughter extends parent{
+
+   public void carrer(){
+      System.out.println("Doctor");
+   }
+   public void age(){
+       System.out.println("Age is 20");
+   }
+
+  }
+
+  public static void main(String[] args) {
+     
+   Son son = new Son(44);
+    
+   son.age = 44;
+     son.carrer();
+     son.age();
+   
+   Daughter daughter = new Daughter();
+     daughter.carrer();
+     daughter.age();
+   }
+
+}
+```
 
 ## Abstract class Object
 
-Abstract class Object does created because of Abstract classes does not create a object , so Abstract classes no body no instance variable and methods
+Abstract class Object does created because of Abstract classes  does not create   a object , so Abstract classes no body no instance variable and methods 
 
 ## Static Method
 
-Static method using in Abstract classes because Abstract classes static method not depending on Object
+Static method using in Abstract classes because Abstract  classes static method not depending on Object 
 
 ## Interfaces
 
