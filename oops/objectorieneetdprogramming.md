@@ -1245,6 +1245,7 @@ The `abstract` keyword is a non-access modifier, used for classes and methods:
 - when you declare an abstract method inside an abstract class, you should include the name add keyword abstract class name.
 - Abstract class can’t create a object and Abstract class is created in super classes /Parent classes no Body
 - Abstract class you can inherit the parent class
+- In a method, abstract classes are used, and there may also be abstract classes used within other classes.
 - Abstract class you Overiding in using child class object
 
 ```java
