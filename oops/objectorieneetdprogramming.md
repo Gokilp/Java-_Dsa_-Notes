@@ -2809,6 +2809,17 @@ Static method using in Abstract classes because Abstract classes static method n
 - Interface methods are by default `abstract` and `public`
 - Interface attributes are by default `public`, `static` and `final`
 - An interface cannot contain a constructor (as it cannot be used to create objects)
+- An interface is a fully [abstract class](https://www.programiz.com/java-programming/abstract-classes-methods). It includes a group of [abstract methods](https://www.programiz.com/java-programming/abstract-classes-methods) ([methods](https://www.programiz.com/java-programming/methods) without a body).
+
+We use the `interface` [keyword](https://www.programiz.com/java-programming/keywords-identifiers) to create an interface in Java. For example,
+
+```java
+interface Language {
+  public void getType();
+
+  public void getVersion();
+}
+```
 
 ### Difference Class and Interfaces
 
@@ -2817,6 +2828,51 @@ Static method using in Abstract classes because Abstract classes static method n
 | In class, you can instantiate variables and create an object.               | In an interface, you can’t instantiate variables and create an object. |
 | A class can contain concrete (with implementation) methods                  | The interface cannot contain concrete (with implementation) methods.   |
 | The access specifiers used with classes are private, protected, and public. | In Interface only one specifier is used- Public.                       |
+
+```java
+interface Polygon {
+  void getArea(int length, int breadth);
+}
+
+// implement the Polygon interface
+class Rectangle implements Polygon {
+
+  // implementation of abstract method
+  public void getArea(int length, int breadth) {
+    System.out.println("The area of the rectangle is " + (length * breadth));
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    Rectangle r1 = new Rectangle();
+    r1.getArea(5, 6);
+  }
+}
+
+Example  2
+
+// create an interface
+interface Language {
+  void getName(String name);
+}
+
+// class implements interface
+class ProgrammingLanguage implements Language {
+
+  // implementation of abstract method
+  public void getName(String name) {
+    System.out.println("Programming Language: " + name);
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    ProgrammingLanguage language = new ProgrammingLanguage();
+    language.getName("Java");
+  }
+}
+```
 
 ### Interfaces
 
@@ -2829,4 +2885,102 @@ Static method using in Abstract classes because Abstract classes static method n
 - Parent class no idea of child classes but child class have idea of parent classes when you are calling one function to child to exit on parent classes, parent classes and child class have a present in compile time java complier to check same or not in more child classes get pushed in parent class in higher and higher levels this problem sloved in interfaces they disconnected definition of method hierarchy of inheritance
 - Interface give to an main body implement muliple classes
 - Interface is not hierarchy class it combine unrelated to each other doesn’t care about their parent’s classes
-- two classes unrealted each other implements or invoke the same interfaces
+- two classes unrelated each other implements or invoke the same interfaces
+- class to interface using implements key word , interface to interfaces using extends key word.
+
+### Extends vs Implements
+
+| S.No. | Extends                                                                                                    | Implements                                                                                                |
+| ----- | ---------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| 1.    | By using “extends” keyword a class can inherit another class, or an interface can inherit other interfaces | By using “implements” keyword a class can implement an interface                                          |
+| 2.    | It is not compulsory that subclass that extends a superclass override all the methods in a superclass.     | It is compulsory that class implementing an interface has to implement all the methods of that interface. |
+| 3.    | Only one superclass can be extended by a class.                                                            | A class can implement any number of an interface at a time                                                |
+| 4.    | Any number of interfaces can be extended by interface.                                                     | An interface can never implement any other interface                                                      |
+
+### Multiple inheritance
+
+- Multiple inheritance solving only interfaces and Abstract class
+
+![Untitled.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/7bb984f5-5804-4e1a-9f55-ed2133c816f0/Untitled.png)
+
+```java
+// Interface for the first parent class
+interface Parent1 {
+    void method1();
+}
+
+// Interface for the second parent class
+interface Parent2 {
+    void method2();
+}
+
+// Concrete class implementing both interfaces
+class Child implements Parent1, Parent2 {
+    public void method1() {
+        System.out.println("Method 1 from Parent1");
+    }
+
+    public void method2() {
+        System.out.println("Method 2 from Parent2");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Child obj = new Child();
+        obj.method1();
+        obj.method2();
+    }
+}
+
+```
+
+### Static method interfaces
+
+- Static method can overriding in objects and static is independent of object
+- static methods are not inherited classes also apply not inherited the Interfaces
+- static interface methods you should always have a body
+- static method you always declare variable
+- static method you should call in the interface name
+
+### Nested Interfaces
+
+- We can declare interfaces as members of a class or another interface. Such an interface is called a member interface or nested interface. **Interface in a class** Interfaces (or classes) can have only public and default access specifiers when declared outside any other class
+
+```java
+Synatax
+interface first{
+     interface second{
+          ...
+     }
+}
+```
+
+```java
+
+// Java program to demonstrate working of
+// interface inside a class.
+import java.util.*;
+class Test {
+    interface Yes {
+        void show();
+    }
+}
+
+class Testing implements Test.Yes {
+    public void show()
+    {
+        System.out.println("show method of interface");
+    }
+}
+
+class A {
+    public static void main(String[] args)
+    {
+        Test.Yes obj;
+        Testing t = new Testing();
+        obj = t;
+        obj.show();
+    }
+}
+```
