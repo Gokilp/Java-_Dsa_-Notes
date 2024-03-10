@@ -1399,5 +1399,12 @@ Static method using in Abstract classes because Abstract classes static method n
 # Interfaces
 
 - Interface contains abstract classes
-- Interfaces doesn’t have object
+- An `interface` is a completely "**abstract class**" that is used to group related methods
+- Like **abstract classes**, interfaces **cannot** be used to create objects
 - Interfaces made up on static and final
+- Interfaces biggest usage in containing a multiple interface in interfaces classes it also part of Abstract classes
+- To access the interface methods, the interface must be "implemented" (kinda like inherited) by another class with the `implements` keyword (instead of `extends`). The body of the interface method is provided by the "implement"
+- On implementation of an interface, you must override all of its methods
+- Interface methods are by default `abstract` and `public`
+- Interface attributes are by default `public`, `static` and `final`
+- An interface cannot contain a constructor (as it cannot be used to create objects)
