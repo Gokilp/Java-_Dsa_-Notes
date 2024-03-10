@@ -3083,8 +3083,16 @@ class GFG1 {
 
 ## **Growth increment**:
 
-- When an ArrayList needs to grow its internal array, it increases its size by a factor of 1.5 (50%). This results in less wasted memory and fewer array copies.
-- Vector, by default, doubles the size of its array when it needs to grow.
+1. **ArrayList**:
+   - When an ArrayList needs to expand because it has reached its capacity, it allocates a new array with a larger size.
+   - The new size is typically calculated as 1.5 times (or 50% more) the current capacity.
+   - For example, if an ArrayList's current capacity is 10 elements and it needs to grow, it will allocate a new array with a capacity of 15 elements.
+   - This growth strategy helps balance memory usage and performance by avoiding excessive resizing while ensuring sufficient capacity for future elements.
+2. **Vector**:
+   - Similar to ArrayList, when a Vector needs to expand due to reaching its capacity, it allocates a new array with a larger size.
+   - However, the growth strategy for Vector is different; it doubles its size when it needs to expand.
+   - For example, if a Vector's current capacity is 10 elements and it needs to grow, it will allocate a new array with a capacity of 20 elements.
+   - Doubling the size ensures faster growth compared to ArrayList's 50% increase but may result in more memory being allocated than necessary in some cases.
 
 | S. No. | ArrayList                                                                                         | Vector                                                                                                                                                                                                     |
 | ------ | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -3097,3 +3105,108 @@ class GFG1 {
 | 7      | Multiple threads is allowed                                                                       | only one threads are allowed .                                                                                                                                                                             |
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/58237bc7-dc81-4014-b360-bab9f54c0bd2/Untitled.png)
+
+## Enum
+
+- The **Enum in Java** is a data type which contains a fixed set of constants.
+- It can be used for days of the week (SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, and SATURDAY) , directions (NORTH, SOUTH, EAST, and WEST), season (SPRING, SUMMER, WINTER, and AUTUMN or FALL), colors (RED, YELLOW, BLUE, GREEN, WHITE, and BLACK) etc. According to the Java naming conventions, we should have all constants in capital letters. So, we have enum constants in capital letters.
+- Java Enums can be thought of as classes which have a fixed set of constants (a variable that does not change). The Java enum constants are static and final implicitly. It is available since JDK 1.5.
+- Enums are used to create our own data type like classes. The **enum** data type (also known as Enumerated Data Type) is used to define an enum in Java. Unlike C/C++, enum in Java is more *powerful*. Here, we can define an enum either inside the class or outside the class.
+- Java Enum internally inherits the *Enum class*, so it cannot inherit any other class, but it can implement many interfaces. We can have fields, constructors, methods, and main methods in Java enum.
+
+# Points to remember for Java Enum
+
+- Enum improves type safety
+- Enum can be easily used in switch
+- Enum can be traversed
+- Enum can have fields, constructors and methods
+- Enum may implement many interfaces but cannot extend any class because it internally extends Enum class
+
+### purpose of the values() method in the enum?
+
+The Java compiler internally adds the values() method when it creates an enum. The values() method returns an array containing all the values of the enum.
+
+### purpose of the valueOf() method in the enum?
+
+The Java compiler internally adds the valueOf() method when it creates an enum. The valueOf() method returns the value of given constant enum.
+
+### purpose of the ordinal() method in the enum?
+
+The Java compiler internally adds the ordinal() method when it creates an enum. The ordinal() method returns the index of the enum value.
+
+### Values()
+
+```java
+class EnumExample1{
+public enum Season { WINTER, SPRING, SUMMER, FALL }
+public static void main(String[] args) {
+for (Season s : Season.values())  //considering like a for each loop
+System.out.println(s);
+}
+}
+```
+
+## valueof() method and valof ordinal()
+
+```java
+class EnumExample1{
+//defining enum within class
+public enum Season { WINTER, SPRING, SUMMER, FALL }
+//creating the main method
+public static void main(String[] args) {
+//printing all enum
+for (Season s : Season.values()){
+System.out.println(s);
+}
+System.out.println("Value of WINTER is: "+Season.valueOf("WINTER"));  // valueof postion of value
+System.out.println("Index of WINTER is: "+Season.valueOf("WINTER").ordinal());  // valueof ordinal postion of index
+System.out.println("Index of SUMMER is: "+Season.valueOf("SUMMER").ordinal());  // value of ordinal postion of index
+
+}
+}
+```
+
+Enum data type programming
+
+```java
+// Define the Fruit enum
+enum Fruit {
+    APPLE("Red", "Sweet"),
+    BANANA("Yellow", "Sweet"),
+    ORANGE("Orange", "Tangy"),
+    GRAPE("Purple", "Sweet"),
+    LEMON("Yellow", "Sour");
+
+    // Properties of each fruit
+    private final String color;
+    private final String taste;
+
+    // Constructor to initialize properties
+    Fruit(String color, String taste) {
+        this.color = color;
+        this.taste = taste;
+    }
+
+    // Getter methods to access properties
+    public String getColor() {
+        return color;
+    }
+
+    public String getTaste() {
+        return taste;
+    }
+}
+
+// Main class to demonstrate the use of the Fruit enum
+public class Main {
+    public static void main(String[] args) {
+        // Iterate over each fruit and display its properties
+        for (Fruit fruit : Fruit.values()) {
+            System.out.println("Fruit: " + fruit.name());
+            System.out.println("Color: " + fruit.getColor());
+            System.out.println("Taste: " + fruit.getTaste());
+            System.out.println();
+        }
+    }
+}
+```
