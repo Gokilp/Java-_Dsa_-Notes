@@ -2825,3 +2825,8 @@ Static method using in Abstract classes because Abstract classes static method n
 - Abstract method run as the Run time method the value
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/78dc7cd1-41c5-4e2c-9343-7ceb6ca23b09/Untitled.png)
+
+- Parent class no idea of child classes but child class have idea of parent classes when you are calling one function to child to exit on parent classes, parent classes and child class have a present in compile time java complier to check same or not in more child classes get pushed in parent class in higher and higher levels this problem sloved in interfaces they disconnected definition of method hierarchy of inheritance
+- Interface give to an main body implement muliple classes
+- Interface is not hierarchy class it combine unrelated to each other doesn’t care about their parent’s classes
+- two classes unrealted each other implements or invoke the same interfaces
