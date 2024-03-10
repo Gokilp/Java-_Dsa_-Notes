@@ -3062,3 +3062,38 @@ class GFG1 {
     }
 }
 ```
+
+[]()
+
+## Collection Frame works
+
+- Any group of individual objects that are represented as a single unit is known as a Java Collection of Objects. In Java, a separate framework named the *“Collection Framework”* has been defined in JDK 1.2 which holds all the Java Collection Classes and Interface in it.
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/da4bf7ec-c5d7-4f1e-9175-ca79b555b276/Untitled.png)
+
+## Array List & Vector
+
+- **`ArrayList`** is not synchronized, meaning it is not thread-safe. Multiple threads can manipulate an ArrayList concurrently, but it is not safe to do so without proper synchronization.
+- **`Vector`**, on the other hand, is synchronized, which means it is thread-safe. This means that multiple threads can safely manipulate a Vector without external synchronization.
+
+## **Performance**:
+
+- Due to the synchronization overhead, Vector operations are generally slower than ArrayList operations.
+- Array List is generally preferred in scenarios where thread-safety is not a concern, as it offers better performance.
+
+## **Growth increment**:
+
+- When an ArrayList needs to grow its internal array, it increases its size by a factor of 1.5 (50%). This results in less wasted memory and fewer array copies.
+- Vector, by default, doubles the size of its array when it needs to grow.
+
+| S. No. | ArrayList                                                                                         | Vector                                                                                                                                                                                                     |
+| ------ | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1.     | ArrayList is not synchronized.                                                                    | Vector is synchronized.                                                                                                                                                                                    |
+| 2.     | ArrayList increments 50% of the current array size if the number of elements exceeds ts capacity. | Vector increments 100% means doubles the array size if the total number of elements exceeds its capacity.                                                                                                  |
+| 3.     | ArrayList is not a legacy class. It is introduced in JDK 1.2.                                     | Vector is a legacy class.                                                                                                                                                                                  |
+| 4.     | ArrayList is fast because it is non-synchronized.                                                 | Vector is slow because it is synchronized, i.e., in a multithreading environment, it holds the other threads in a runnable or non-runnable state until the current thread releases the lock of the object. |
+| 5.     | ArrayList uses the Iterator interface to traverse the elements.                                   | A Vector can use the Iterator interface or Enumeration interface to traverse the elements.                                                                                                                 |
+| 6      | ArrayList performance is high                                                                     | Vector performance is low                                                                                                                                                                                  |
+| 7      | Multiple threads is allowed                                                                       | only one threads are allowed .                                                                                                                                                                             |
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/58237bc7-dc81-4014-b360-bab9f54c0bd2/Untitled.png)
