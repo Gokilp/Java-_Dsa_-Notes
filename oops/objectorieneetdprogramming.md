@@ -2958,6 +2958,7 @@ interface first{
 
 ```java
 
+//code
 // Java program to demonstrate working of
 // interface inside a class.
 import java.util.*;
