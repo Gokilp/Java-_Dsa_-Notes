@@ -1408,10 +1408,16 @@ Static method using in Abstract classes because Abstract classes static method n
 - Interface methods are by default `abstract` and `public`
 - Interface attributes are by default `public`, `static` and `final`
 - An interface cannot contain a constructor (as it cannot be used to create objects)
+
+# Classes
+
+- class is like a blue print
+- classes Named group of properities and function
 - classes is used combined properties and Methods
 - classes and object are important object oriented programming oriented Pillars are Encaplusation, inheritance, Abstraction, Ploymorphism
 - Inheritance => Inherit the value form one class to another classes
 - Polymorphism => solving the problem of Inheritance and polymorphism work for constructor value.ploymorphism,are Operator overloading, Function overloading, Overriding
+- Abstraction focuses on the external level of implementation, whereas Encapsulation concentrates on the internal level of implementation.
 - Abstraction involves gaining information, while Encapsulation involves containing information at a certain level.
 
 ## Why need Class
@@ -2958,7 +2964,6 @@ interface first{
 
 ```java
 
-//code
 // Java program to demonstrate working of
 // interface inside a class.
 import java.util.*;
@@ -2982,6 +2987,78 @@ class A {
         Testing t = new Testing();
         obj = t;
         obj.show();
+    }
+}
+```
+
+### Exception Handling
+
+- The **Exception Handling in Java** is one of the powerful *mechanism to handle the runtime errors* so that the normal flow of the application can be maintained.
+
+error ⇒ lacking of resources example Stack Memory is full, out of Memory error, you cannot recoverable
+
+- Expection handling ⇒ flow of program eg divided by Zerom, Null pointer error
+
+# What is Exception Handling?
+
+Exception Handling is a mechanism to handle runtime errors such as ClassNotFoundException, IOException, SQLException, RemoteException, etc.
+
+### **Advantage of Exception Handling**
+
+The core advantage of exception handling is **to maintain the normal flow of the application**. An exception normally disrupts the normal flow of the application; that is why we need to handle exceptions.
+
+Exception Handling Diagram
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/efebab00-8ca1-4c87-8f46-3a0c7a7c08b8/Untitled.png)
+
+# Types of Java Exceptions
+
+There are mainly two types of exceptions: checked and unchecked. An error is considered as the unchecked exception. However, according to Oracle, there are three types of exceptions namely:
+
+1. Checked Exception
+2. Unchecked Exception
+3. Error
+
+### **1) Checked Exception**
+
+The classes that directly inherit the Throwable class except RuntimeException and Error are known as checked exceptions. For example, IOException, SQLException, etc. Checked exceptions are checked at compile-time.
+
+### **2) Unchecked Exception**
+
+The classes that inherit the RuntimeException are known as unchecked exceptions. For example, ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException, etc. Unchecked exceptions are not checked at compile-time, but they are checked at runtime.
+
+### **3) Error**
+
+Error is irrecoverable. Some example of errors are OutOfMemoryError, VirtualMachineError, AssertionError etc.
+
+# Java Exception Keywords
+
+Java provides five keywords that are used to handle the exception. The following table describes each.
+
+| Keyword | Description                                                                                                                                                                               |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| try     | The "try" keyword is used to specify a block where we should place an exception code. It means we can't use try block alone. The try block must be followed by either catch or finally.   |
+| catch   | The "catch" block is used to handle the exception. It must be preceded by try block which means we can't use catch block alone. It can be followed by finally block later.                |
+| finally | The "finally" block is used to execute the necessary code of the program. It is executed whether an exception is handled or not.                                                          |
+| throw   | The "throw" keyword is used to throw an exception.                                                                                                                                        |
+| throws  | The "throws" keyword is used to declare exceptions. It specifies that there may occur an exception in the method. It doesn't throw an exception. It is always used with method signature. |
+
+```java
+
+//program to print the exception information using getMessage() method
+
+import java.io.*;
+
+class GFG1 {
+    public static void main (String[] args) {
+      int a=5;
+      int b=0;
+        try{
+          System.out.println(a/b);
+        }
+      catch(ArithmeticException e){
+        System.out.println(e.getMessage());
+      }
     }
 }
 ```
