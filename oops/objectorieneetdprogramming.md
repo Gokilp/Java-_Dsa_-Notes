@@ -2817,3 +2817,11 @@ Static method using in Abstract classes because Abstract classes static method n
 | In class, you can instantiate variables and create an object.               | In an interface, you can’t instantiate variables and create an object. |
 | A class can contain concrete (with implementation) methods                  | The interface cannot contain concrete (with implementation) methods.   |
 | The access specifiers used with classes are private, protected, and public. | In Interface only one specifier is used- Public.                       |
+
+### Interfaces
+
+- Interface support multiple inheritance classes in one interface files and contains
+- Interface using to archive multiple inheritance
+- Abstract method run as the Run time method the value
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/78dc7cd1-41c5-4e2c-9343-7ceb6ca23b09/Untitled.png)
