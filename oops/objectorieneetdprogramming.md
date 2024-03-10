@@ -24,9 +24,9 @@ While this approach works, it can quickly become unwieldy as the program grows. 
 
 # Classes
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/44ffdcdb-2e14-4489-9846-a40d2d1b1e29/Untitled.png)
+![classes](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/5f2a8924-d7b1-4e19-b90f-8721a4ebfe34)
+![classes2](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/d7511e2b-afe2-46f4-8d2e-233892d64f07)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/0fbdd402-181f-4c8b-a0a8-2ce137ea7e46/Untitled.png)
 
 - Classes is created a own purpose contains own **Methods and properties.**
 - Class is a template of an Object
@@ -65,7 +65,8 @@ String name;  // Name
 Student student1 = new Student();
 ```
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/188bddfe-d188-40b1-b14c-e9137cea5eb1/Untitled.png)
+![declareobject](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/1bcef8af-5771-4a72-aac7-7842db1e6ca6)
+
 
 - New Word is create a Dynamically allocate memory & Return a reference to it
 
