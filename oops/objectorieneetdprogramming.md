@@ -1123,8 +1123,8 @@ protected is access classes, packages, Sub class Package in same pkg, Sub class 
 - equals(Object obj) method
 - finalize() method
 - getClass() method
+![object classes methods](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/c75714a4-1776-44ff-a781-20b7def68bb3)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/370b8a7c-f27b-46b8-96c6-b6433fb9ac7c/Untitled.png)
 
 ### **1. `toString()`**
 
@@ -1246,7 +1246,8 @@ Data **abstraction** is the process of hiding certain details and showing only
 
 Abstraction can be achieved with either **abstract classes** or interfaces
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/c9bd013f-e92f-4739-afb9-b9894b2810e8/Untitled.png)
+![abstarct class](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/dd6fda57-cbbd-4ff9-9c1b-4e9622b704ae)
+
 
 - Inheritance conflicts inherit the same Function Name sloving the conflict using Abstract classes
 - Overriding sloving the conflicts
@@ -1407,7 +1408,8 @@ Static method using in Abstract classes because Abstract classes static method n
 
 ## Interfaces
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/8d029115-7a2e-425c-86a7-152f06f01a2f/Untitled.png)
+![interfaces](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/1e9bedbd-8c07-4a0f-bc69-1eb7652a0c0f)
+
 
 # Interfaces
 
@@ -1447,10 +1449,10 @@ String[] names = new String[5]; // Array for storing student names
 While this approach works, it can quickly become unwieldy as the program grows. Every additional piece of data necessitates another array, leading to increased memory consumption and complex data management. Classes offer a more elegant solution by consolidating related data and behavior into a single entity.
 
 # Classes
+![Classes1](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/19ce31b9-0e1a-4974-aa99-a6810b7b0cb1)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/44ffdcdb-2e14-4489-9846-a40d2d1b1e29/Untitled.png)
+![classes2](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/7dd1b17a-50a3-439a-ad95-18a254d45a43)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/0fbdd402-181f-4c8b-a0a8-2ce137ea7e46/Untitled.png)
 
 - Classes is created a own purpose contains own **Methods and properties.**
 - Class is a template of an Object
