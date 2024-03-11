@@ -72,7 +72,7 @@ Student student1 = new Student();
 
 ## Runtime and compile Time
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/c4d9d0cc-cee9-45a0-a5b6-86882c2377d8/Untitled.png)
+![runtime and complie time](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/5efea809-c380-46fe-b840-df709e6b92da)
 
 ### Complie Time
 
@@ -323,7 +323,7 @@ public class Main {
 - New word also an Objects and stored in Heap Memory
 - Heap mermory Object point to another Reference Variable
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/a7a6aee8-2450-41bb-b530-3e3b8e396764/Untitled.png)
+![new key word](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/3dc80e5b-71f5-48db-b99c-bbe3fb0968c3)
 
 ## Wrapper Classes
 
@@ -331,11 +331,13 @@ public class Main {
 - Wrapper classes is immutable
 - wrapper classes in scenarios where objects are required, such as collections (ArrayList, HashMap) which can't directly store primitive types.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/49671ea6-0b35-4b14-8305-d28013a2f88c/Untitled.png)
+![wrapper classes](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/48866c33-78bb-4883-b66b-705aa6e5721f)
+
 
 - Wrapper classes contains internal side
+  
+![wrapper class inside](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/fd1fcd0d-0950-4182-9476-31965d4c21a3)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/85bea851-6fd2-4647-8204-f2280261fd68/Untitled.png)
 
 ### Arritubutes of Wrapper Classes
 
@@ -641,7 +643,8 @@ public class Main {
 - Java, Inheritance means creating new classes based on existing ones. A class that inherits from another class can reuse the methods and fields of that class. In addition.
 - In heritance is base classes inherit to derived class you can also create a new properties on derived classes and also used existing base class properties .
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/813a2fea-0a38-4dc1-bb07-d24b7909f536/Untitled.png)
+![inheritance](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/1a1aa3ee-6d38-4b65-b261-c7d8424b9fc4)
+
 
 ## Syntax
 
@@ -696,8 +699,7 @@ public class Oops{
 ```
 
 # Access to object
-
-![1000020284.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/f2571e4e-2e55-46c9-8579-a4ae25a3d0d5/1000020284.jpg)
+![access to object](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/24204db4-1597-490c-9bd2-76c05c920188)
 
 - In object-oriented programming (OOP), when you create an object of a parent class, you can't directly access the members or methods of derived classes. The reason is that the object created is of the parent class type, so it only contains the attributes and methods defined in the parent class.
 - However, if the methods or attributes in the derived classes are accessible through inheritance (i.e., they are not private or protected), you can access them by creating an object of the derived class and then accessing those members or methods through that object.
@@ -809,8 +811,9 @@ Single Inheritance is one classes extends from another classes
 In the oops concept create object dervied classes to base classes
 
 Example
+![single inheritance](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/ae5ab47e-5a0b-4e57-a966-c28cbbedd714)
 
-![1000020284.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/f2571e4e-2e55-46c9-8579-a4ae25a3d0d5/1000020284.jpg)
+
 
 ```java
 class derived-class extends base-class
@@ -819,7 +822,8 @@ class derived-class extends base-class
 }
 ```
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/ca4b363d-7311-4b53-90f5-81aad2f5fb60/Untitled.png)
+![single inheritance1](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/160be3fe-5e45-4f12-b273-45a2b51c7bd4)
+
 
 ### multi level inheritance
 
@@ -828,9 +832,10 @@ class derived-class extends base-class
 
 Visual Represtation
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/222de7e9-a2e9-4827-9ea6-df8b8d1f5a3b/Untitled.png)
+![multiple iheritance](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/2db6c20f-ec6c-4492-874a-1fed6b33ad9c)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/337cf01a-1f2c-4cef-b7e7-711758aa51bb/Untitled.png)
+![multilevel inheritance](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/2960dff2-9853-429e-b664-3539358f2d52)
+
 
 ```java
 // Java program to illustrate the
@@ -876,17 +881,18 @@ In Multiple inheritances, one class can have more than one superclass and inher
 
 Java does not support multiple inheritances with classes. In Java, we can achieve multiple inheritances only through Interfaces. In the image below, Class C is derived from interfaces A and B.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/eea07492-fcb9-477d-af8c-fa949edd6b21/Untitled.png)
+![multipleinher](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/7dacc090-7c0d-4613-b05c-c03df5a36165)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/8b4ceef2-ec4b-41c0-bf95-0073ea543560/Untitled.png)
+![mullevel](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/486d5bc4-1b86-4ffe-bea9-2c9ffc1c4585)
 
 ### Hierarchical Inheritance
 
 In Hierarchical Inheritance, one class serves as a superclass (base class) for more than one subclass. In the below image, class A serves as a base class for the derived classes B, C, and D.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/11d4ba69-c14f-499d-8dfe-c3ee927fdfa2/Untitled.png)
+![herriacalinheritance](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/1dd52bee-b2be-4532-946a-b5fada61742d)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/27c4b478-4347-46ed-aff2-05f73b356d6a/Untitled.png)
+![hierrachial inheritance 2](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/a639c2e1-367a-4f56-8e66-4e4592cb1ef4)
+
 
 ```java
 class Animal{
@@ -914,11 +920,12 @@ c.eat();
 - Hybird Inheritance combination of single and Multiple inheritance
 - Hybird Inheritance is not access java but only use in interfaces
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/8ca136c8-6815-4e33-afbe-b8d7fd836cbe/Untitled.png)
+![hybird inheritance](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/c996aaea-0865-4a52-9416-1e7527bbacc2)
 
 # Ploymorphsim
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/82e9cb7c-827b-4b86-8be6-7a8cb6f7ec35/Untitled.png)
+![ploymorphism](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/449fd0b9-aae5-4481-b4a5-de72a0190373)
+
 
 > Poly Means Many
 
@@ -926,14 +933,15 @@ c.eat();
 
 Syntax of ploymorphism
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/07e3b0e3-93fb-4470-8d47-f88fb10ffb05/Untitled.png)
+![syntaxofpolymorphism](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/ad8301ee-a6d5-4679-ad8d-a0785bfa74e2)
+
 
 ## Types of Polymorphism
 
 - Compile Time polymorphism
 - Static polymorphism
+![typesofploy](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/935583af-876a-4295-ba8f-0ec0dd4c25af)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/b99bc0d7-aa81-4531-a56c-a917e0db142c/Untitled.png)
 
 ### Compile time Polymorphism
 
@@ -1028,7 +1036,8 @@ parent object = new child();
    - The parent class method is executed instead of the overridden method in the subclass.
    - This behavior may cause unexpected results, deviating from the intended subclass functionality.
 
-![Screenshot 2024-02-22 205715.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/2c42fee2-5f8b-4da4-8f6f-0a7b31f03177/Screenshot_2024-02-22_205715.png)
+![overriding](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/f7fe7379-a2fd-41e8-9545-3ff63ec5897c)
+
 
 ### Early Binding and Late binding
 
@@ -1050,7 +1059,8 @@ parent object = new child();
 - Using the static keyword prevents the overriding of values because static does not depend on objects. A static method is referenced using the class name or a reference variable; you cannot access it by calling on objects.
 - Static methods do not depend on objects, so they cannot be overridden based on objects. Therefore, static methods cannot be overridden.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/54208fa8-5cc6-4909-9ba1-90a7c785cd15/Untitled.png)
+![final keyword](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/81649da0-e735-4944-8fa1-ff2f152b5427)
+
 
 ## Encapsulation and Abstraction
 
@@ -1071,7 +1081,7 @@ protected is access classes, packages, Sub class Package in same pkg, Sub class 
 
 ### Rules for Access Modifier’s
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/4b5e27a5-2041-4517-b962-0dd252690765/Untitled.png)
+![Access modifier](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/044a8935-4477-4d1d-959d-e6691c96a38a)
 
 ## When to use the Access modifier’s
 
@@ -1084,7 +1094,8 @@ protected is access classes, packages, Sub class Package in same pkg, Sub class 
 - In protected Only you access inherit the Subclasses Not know the parent classes
 - Simple protected access only Subclasses only.
 
-![1000020284.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/f2571e4e-2e55-46c9-8579-a4ae25a3d0d5/1000020284.jpg)
+![useaccessmodifer](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/22cdb8df-5d65-4a17-8ca8-73936e2c3270)
+
 
 - Protected Key word also refers to the base classes
 
@@ -1095,14 +1106,15 @@ protected is access classes, packages, Sub class Package in same pkg, Sub class 
 - util: Utility - Java package containing various utility classes and data structures.
 - applet: Application let - A small application program that runs within a larger application or web browser.
 - awt: Abstract Window Toolkit - Java package for creating graphical user interfaces (GUIs).
-- net: Network - Java package for networking functionality, including client-server communicati
+- net: Network - Java package for networking functionality, including client-server communication 
 
 ### Object classes
 
 - The **Object class** is the parent class of all the classes in java by default. In other words, it is the topmost class of java.
 - The Object class is beneficial if you want to refer any object whose type you don't know. Notice that parent class reference variable can refer the child class object, know as upcasting.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/71165023-7929-4556-9b4b-73166a630765/Untitled.png)
+
+![object classes](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/ac980442-a0a1-4784-8900-62c2bcad6a36)
 
 ## Object class Methods
 
