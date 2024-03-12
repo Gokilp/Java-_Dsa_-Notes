@@ -27,7 +27,6 @@ While this approach works, it can quickly become unwieldy as the program grows. 
 ![classes](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/5f2a8924-d7b1-4e19-b90f-8721a4ebfe34)
 ![classes2](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/d7511e2b-afe2-46f4-8d2e-233892d64f07)
 
-
 - Classes is created a own purpose contains own **Methods and properties.**
 - Class is a template of an Object
 - Object is an instance of classes
@@ -66,7 +65,6 @@ Student student1 = new Student();
 ```
 
 ![declareobject](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/1bcef8af-5771-4a72-aac7-7842db1e6ca6)
-
 
 - New Word is create a Dynamically allocate memory & Return a reference to it
 
@@ -333,11 +331,9 @@ public class Main {
 
 ![wrapper classes](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/48866c33-78bb-4883-b66b-705aa6e5721f)
 
-
 - Wrapper classes contains internal side
-  
-![wrapper class inside](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/fd1fcd0d-0950-4182-9476-31965d4c21a3)
 
+![wrapper class inside](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/fd1fcd0d-0950-4182-9476-31965d4c21a3)
 
 ### Arritubutes of Wrapper Classes
 
@@ -645,7 +641,6 @@ public class Main {
 
 ![inheritance](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/1a1aa3ee-6d38-4b65-b261-c7d8424b9fc4)
 
-
 ## Syntax
 
 ```java
@@ -699,6 +694,7 @@ public class Oops{
 ```
 
 # Access to object
+
 ![access to object](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/24204db4-1597-490c-9bd2-76c05c920188)
 
 - In object-oriented programming (OOP), when you create an object of a parent class, you can't directly access the members or methods of derived classes. The reason is that the object created is of the parent class type, so it only contains the attributes and methods defined in the parent class.
@@ -813,8 +809,6 @@ In the oops concept create object dervied classes to base classes
 Example
 ![single inheritance](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/ae5ab47e-5a0b-4e57-a966-c28cbbedd714)
 
-
-
 ```java
 class derived-class extends base-class
 {
@@ -823,7 +817,6 @@ class derived-class extends base-class
 ```
 
 ![single inheritance1](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/160be3fe-5e45-4f12-b273-45a2b51c7bd4)
-
 
 ### multi level inheritance
 
@@ -835,7 +828,6 @@ Visual Represtation
 ![multiple iheritance](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/2db6c20f-ec6c-4492-874a-1fed6b33ad9c)
 
 ![multilevel inheritance](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/2960dff2-9853-429e-b664-3539358f2d52)
-
 
 ```java
 // Java program to illustrate the
@@ -893,7 +885,6 @@ In Hierarchical Inheritance, one class serves as a superclass (base class) for m
 
 ![hierrachial inheritance 2](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/a639c2e1-367a-4f56-8e66-4e4592cb1ef4)
 
-
 ```java
 class Animal{
 void eat(){System.out.println("eating...");}
@@ -926,7 +917,6 @@ c.eat();
 
 ![ploymorphism](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/449fd0b9-aae5-4481-b4a5-de72a0190373)
 
-
 > Poly Means Many
 
 > morphism ⇒ ways to respresent
@@ -935,13 +925,11 @@ Syntax of ploymorphism
 
 ![syntaxofpolymorphism](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/ad8301ee-a6d5-4679-ad8d-a0785bfa74e2)
 
-
 ## Types of Polymorphism
 
 - Compile Time polymorphism
 - Static polymorphism
-![typesofploy](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/935583af-876a-4295-ba8f-0ec0dd4c25af)
-
+  ![typesofploy](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/935583af-876a-4295-ba8f-0ec0dd4c25af)
 
 ### Compile time Polymorphism
 
@@ -1038,7 +1026,6 @@ parent object = new child();
 
 ![overriding](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/f7fe7379-a2fd-41e8-9545-3ff63ec5897c)
 
-
 ### Early Binding and Late binding
 
 1. **Early Binding**:
@@ -1060,7 +1047,6 @@ parent object = new child();
 - Static methods do not depend on objects, so they cannot be overridden based on objects. Therefore, static methods cannot be overridden.
 
 ![final keyword](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/81649da0-e735-4944-8fa1-ff2f152b5427)
-
 
 ## Encapsulation and Abstraction
 
@@ -1096,7 +1082,6 @@ protected is access classes, packages, Sub class Package in same pkg, Sub class 
 
 ![useaccessmodifer](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/22cdb8df-5d65-4a17-8ca8-73936e2c3270)
 
-
 - Protected Key word also refers to the base classes
 
 ## Common Packages
@@ -1106,13 +1091,12 @@ protected is access classes, packages, Sub class Package in same pkg, Sub class 
 - util: Utility - Java package containing various utility classes and data structures.
 - applet: Application let - A small application program that runs within a larger application or web browser.
 - awt: Abstract Window Toolkit - Java package for creating graphical user interfaces (GUIs).
-- net: Network - Java package for networking functionality, including client-server communication 
+- net: Network - Java package for networking functionality, including client-server communication
 
 ### Object classes
 
 - The **Object class** is the parent class of all the classes in java by default. In other words, it is the topmost class of java.
 - The Object class is beneficial if you want to refer any object whose type you don't know. Notice that parent class reference variable can refer the child class object, know as upcasting.
-
 
 ![object classes](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/ac980442-a0a1-4784-8900-62c2bcad6a36)
 
@@ -1123,8 +1107,7 @@ protected is access classes, packages, Sub class Package in same pkg, Sub class 
 - equals(Object obj) method
 - finalize() method
 - getClass() method
-![object classes methods](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/c75714a4-1776-44ff-a781-20b7def68bb3)
-
+  ![object classes methods](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/c75714a4-1776-44ff-a781-20b7def68bb3)
 
 ### **1. `toString()`**
 
@@ -1247,7 +1230,6 @@ Data **abstraction** is the process of hiding certain details and showing only
 Abstraction can be achieved with either **abstract classes** or interfaces
 
 ![abstarct class](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/dd6fda57-cbbd-4ff9-9c1b-4e9622b704ae)
-
 
 - Inheritance conflicts inherit the same Function Name sloving the conflict using Abstract classes
 - Overriding sloving the conflicts
@@ -1409,7 +1391,6 @@ Static method using in Abstract classes because Abstract classes static method n
 ## Interfaces
 
 ![interfaces](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/1e9bedbd-8c07-4a0f-bc69-1eb7652a0c0f)
-
 
 # Interfaces
 
@@ -1619,7 +1600,6 @@ Exception Handling Diagram
 
 ![expection handling](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/e06f714c-fa35-4a6d-a3e5-e4276372e22b)
 
-
 # Types of Java Exceptions
 
 There are mainly two types of exceptions: checked and unchecked. An error is considered as the unchecked exception. However, according to Oracle, there are three types of exceptions namely:
@@ -1680,7 +1660,6 @@ class GFG1 {
 
 ![collection frame work](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/ccfa54de-53dd-4ff4-95bd-b762c4926c9e)
 
-
 ## Array List & Vector
 
 - **`ArrayList`** is not synchronized, meaning it is not thread-safe. Multiple threads can manipulate an ArrayList concurrently, but it is not safe to do so without proper synchronization.
@@ -1715,7 +1694,6 @@ class GFG1 {
 | 7      | Multiple threads is allowed                                                                       | only one threads are allowed .                                                                                                                                                                             |
 
 ![Untitled](https://github.com/Gokilp/Java-_Dsa_-Notes/assets/76507378/9cec3185-3391-4486-baf7-e465106c0ad5)
-
 
 ## Enum
 
