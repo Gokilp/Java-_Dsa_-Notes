@@ -1,8 +1,7 @@
 import java.util.Scanner;
 
 public class power {
-  
-   
+
     public static void main(String[] args) {
       double power, number;
         System.out.println("Enter the Number");
